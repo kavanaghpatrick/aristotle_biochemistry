@@ -1,0 +1,87 @@
+{
+  "description": "hERG binders and non-binders for constraint validation",
+  "source": "ChEMBL, FDA, literature",
+  "date": "2025-12-11",
+  "molecules": [
+    {
+      "name": "terfenadine",
+      "category": "known_binder",
+      "smiles": "CC(C)(C)C(O)CCCN1CCC(CC1)C(O)(C2=CC=CC=C2)C3=CC=CC=C3",
+      "ic50_nm": 56,
+      "reference": "FDA withdrawn 1997",
+      "notes": "Known high-affinity blocker, withdrawn for cardiac toxicity"
+    },
+    {
+      "name": "cisapride",
+      "category": "known_binder",
+      "smiles": "COC1=CC=C(C=C1)CCNC(=O)C2CCN(CC2)CC(=O)NC3=CC(=C(C=C3)OC)Cl",
+      "ic50_nm": 6.5,
+      "reference": "FDA withdrawn 2000",
+      "notes": "Very high affinity, QT prolongation"
+    },
+    {
+      "name": "astemizole",
+      "category": "known_binder",
+      "smiles": "COC1=CC=C(C=C1)CCN2CCC(CC2)NC(=O)C3=CC=C(C=C3)F",
+      "ic50_nm": 1,
+      "reference": "ChEMBL",
+      "notes": "Extremely high affinity blocker"
+    },
+    {
+      "name": "dofetilide",
+      "category": "known_binder",
+      "smiles": "CN(C)CCCOC1=CC=C(C=C1)NS(=O)(=O)C2=CC=C(C=C2)NS(=O)(=O)C",
+      "ic50_nm": 15,
+      "reference": "Class III antiarrhythmic",
+      "notes": "Intentional hERG blocker (therapeutic)"
+    },
+    {
+      "name": "sertindole",
+      "category": "known_binder",
+      "smiles": "C1CN(CCN1C2=NC3=CC=CC=C3C(=C2)Cl)CCCC4=C5C=CC=CC5=NC=C4F",
+      "ic50_nm": 47,
+      "reference": "ChEMBL",
+      "notes": "Antipsychotic, hERG liability"
+    },
+    {
+      "name": "metformin",
+      "category": "known_non_binder",
+      "smiles": "CN(C)C(=N)NC(=N)N",
+      "ic50_um": ">100",
+      "reference": "Negative control",
+      "notes": "No aromatic rings, should FAIL pharmacophore"
+    },
+    {
+      "name": "acetaminophen",
+      "category": "known_non_binder",
+      "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+      "ic50_um": ">100",
+      "reference": "Negative control",
+      "notes": "No basic nitrogen, should FAIL pharmacophore"
+    },
+    {
+      "name": "aspirin",
+      "category": "known_non_binder",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "ic50_um": ">100",
+      "reference": "Negative control",
+      "notes": "No basic nitrogen, acidic, should FAIL"
+    },
+    {
+      "name": "atenolol",
+      "category": "known_non_binder",
+      "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O",
+      "ic50_um": ">30",
+      "reference": "Beta-blocker, low hERG affinity",
+      "notes": "Has basic nitrogen + aromatic but low affinity"
+    },
+    {
+      "name": "propranolol",
+      "category": "weak_binder",
+      "smiles": "CC(C)NCC(COC1=C2C=CC=CC2=CC=C1)O",
+      "ic50_um": 23,
+      "reference": "Beta-blocker",
+      "notes": "Weak binder, has pharmacophore but moderate distances"
+    }
+  ]
+}

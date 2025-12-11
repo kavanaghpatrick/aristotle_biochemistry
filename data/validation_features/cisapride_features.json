@@ -1,0 +1,194 @@
+{
+  "molecule_name": "cisapride",
+  "smiles": "COC1=CC=C(C=C1)CCNC(=O)C2CCN(CC2)CC(=O)NC3=CC(=C(C=C3)OC)Cl",
+  "molecular_weight": 459.97,
+  "logp": 3.37,
+  "num_h_donors": 2,
+  "num_h_acceptors": 5,
+  "features": [
+    {
+      "id": "cation_N10",
+      "kind": "Cationic",
+      "coord": [
+        "-32079313517/8507320821",
+        "16129124341/6025284241",
+        "-418482967/3360495400"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 10
+    },
+    {
+      "id": "cation_N16",
+      "kind": "Cationic",
+      "coord": [
+        "412301228/381044983",
+        "12414468463/8156609607",
+        "-559821544/7615736915"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 16
+    },
+    {
+      "id": "cation_N22",
+      "kind": "Cationic",
+      "coord": [
+        "35773410136/9000161897",
+        "3264072107/5574552741",
+        "-2384783053/8403266720"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 22
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-22610815601/4255643252",
+        "-6576268159/7660725442",
+        "771174939/3838337326"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "9709758473/1553882019",
+        "-5311240511/4804213242",
+        "-34313685/2613352223"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        23
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-395912401/1436189457",
+        "-1160438708/6704268079",
+        "-1620953143/9976931492"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        18,
+        24,
+        25,
+        27,
+        28,
+        31
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N10",
+      "to": "cation_N16",
+      "distance": 4.9886084335929555
+    },
+    {
+      "from": "cation_N10",
+      "to": "cation_N22",
+      "distance": 8.02450150477968
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring0",
+      "distance": 3.870842652123
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring1",
+      "distance": 10.710259937601467
+    },
+    {
+      "from": "cation_N10",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.509965224155388
+    },
+    {
+      "from": "cation_N16",
+      "to": "cation_N22",
+      "distance": 3.047797870776435
+    },
+    {
+      "from": "cation_N16",
+      "to": "aromatic_ring0",
+      "distance": 6.829347995465881
+    },
+    {
+      "from": "cation_N16",
+      "to": "aromatic_ring1",
+      "distance": 5.796747370194153
+    },
+    {
+      "from": "cation_N16",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.1736207714390887
+    },
+    {
+      "from": "cation_N22",
+      "to": "aromatic_ring0",
+      "distance": 9.41195351294949
+    },
+    {
+      "from": "cation_N22",
+      "to": "aromatic_ring1",
+      "distance": 2.846727680004965
+    },
+    {
+      "from": "cation_N22",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.319293718658972
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 11.56646808256192
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.096846044728897
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.5923654607881845
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 6
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

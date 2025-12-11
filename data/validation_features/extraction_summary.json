@@ -1,0 +1,204 @@
+{
+  "dataset": "hERG binders and non-binders for constraint validation",
+  "total_molecules": 10,
+  "successful_extractions": 10,
+  "results": [
+    {
+      "name": "terfenadine",
+      "category": "known_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "cation_aromatic_distances": [
+        6.199048346413662,
+        5.9712161508893615
+      ],
+      "min_cation_aromatic": 5.9712161508893615,
+      "max_cation_aromatic": 6.199048346413662,
+      "ic50": 56
+    },
+    {
+      "name": "cisapride",
+      "category": "known_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "cation_aromatic_distances": [
+        3.870842652123,
+        10.710259937601467,
+        6.829347995465881,
+        5.796747370194153,
+        9.41195351294949,
+        2.846727680004965
+      ],
+      "min_cation_aromatic": 2.846727680004965,
+      "max_cation_aromatic": 10.710259937601467,
+      "ic50": 6.5
+    },
+    {
+      "name": "astemizole",
+      "category": "known_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "cation_aromatic_distances": [
+        5.123381651131012,
+        7.946066823570786,
+        9.357560188652725,
+        3.8455356386306776
+      ],
+      "min_cation_aromatic": 3.8455356386306776,
+      "max_cation_aromatic": 9.357560188652725,
+      "ic50": 1
+    },
+    {
+      "name": "dofetilide",
+      "category": "known_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "cation_aromatic_distances": [
+        5.894365119688172,
+        8.370660908632516,
+        2.8519517346859526,
+        4.088247008587396,
+        7.140865100067766,
+        2.8521194538273464
+      ],
+      "min_cation_aromatic": 2.8519517346859526,
+      "max_cation_aromatic": 8.370660908632516,
+      "ic50": 15
+    },
+    {
+      "name": "sertindole",
+      "category": "known_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 4,
+        "aromatic": 4,
+        "hydrophobic": 1,
+        "total": 9
+      },
+      "cation_aromatic_distances": [
+        5.4914129949727135,
+        7.729035262947058,
+        6.5670869734735575,
+        6.174127307848937,
+        2.8311974521410437,
+        5.045606595949773,
+        9.123788635927307,
+        8.338687234423515,
+        1.3703734836164325,
+        2.761433135481465,
+        11.207123116365022,
+        10.344636278424565,
+        11.457277616103159,
+        13.675895823159543,
+        2.762102132484937,
+        1.372766514372837
+      ],
+      "min_cation_aromatic": 1.3703734836164325,
+      "max_cation_aromatic": 13.675895823159543,
+      "ic50": 47
+    },
+    {
+      "name": "metformin",
+      "category": "known_non_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 5,
+        "aromatic": 0,
+        "hydrophobic": 0,
+        "total": 5
+      },
+      "cation_aromatic_distances": [],
+      "min_cation_aromatic": null,
+      "max_cation_aromatic": null,
+      "ic50": ">100"
+    },
+    {
+      "name": "acetaminophen",
+      "category": "known_non_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "cation_aromatic_distances": [
+        2.8475599452761013
+      ],
+      "min_cation_aromatic": 2.8475599452761013,
+      "max_cation_aromatic": 2.8475599452761013,
+      "ic50": ">100"
+    },
+    {
+      "name": "aspirin",
+      "category": "known_non_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 0,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 2
+      },
+      "cation_aromatic_distances": [],
+      "min_cation_aromatic": null,
+      "max_cation_aromatic": null,
+      "ic50": ">100"
+    },
+    {
+      "name": "atenolol",
+      "category": "known_non_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "cation_aromatic_distances": [
+        7.596014074988505,
+        4.29846069308594
+      ],
+      "min_cation_aromatic": 4.29846069308594,
+      "max_cation_aromatic": 7.596014074988505,
+      "ic50": ">30"
+    },
+    {
+      "name": "propranolol",
+      "category": "weak_binder",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "cation_aromatic_distances": [
+        7.184818513044891,
+        8.337491951561317
+      ],
+      "min_cation_aromatic": 7.184818513044891,
+      "max_cation_aromatic": 8.337491951561317,
+      "ic50": 23
+    }
+  ]
+}
