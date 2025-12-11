@@ -1,0 +1,34 @@
+{
+  "cavity_center": [
+    159.11975019949455,
+    159.12025006612143,
+    127.62250024301035
+  ],
+  "cavity_volume": 7797.83740234375,
+  "n_atoms": 216,
+  "n_chains": 4,
+  "phe656_ca_atoms": [
+    {
+      "chain": "A",
+      "distance_from_center": 12.353140729357676
+    },
+    {
+      "chain": "B",
+      "distance_from_center": 12.353378211343353
+    },
+    {
+      "chain": "C",
+      "distance_from_center": 12.353632527019114
+    },
+    {
+      "chain": "D",
+      "distance_from_center": 12.353364200557552
+    }
+  ],
+  "atoms_by_chain": {
+    "A": 54,
+    "B": 54,
+    "C": 54,
+    "D": 54
+  }
+}
