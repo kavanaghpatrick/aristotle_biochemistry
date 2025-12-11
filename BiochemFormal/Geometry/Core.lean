@@ -1,4 +1,29 @@
 /-
+This file was edited by Aristotle.
+
+Lean version: leanprover/lean4:v4.24.0
+Mathlib version: f897ebcf72cd16f89ab4577d0c826cd14afaafc7
+This project request had uuid: 140f73f0-6e66-453f-9704-68fe0c6a202e
+
+The following was proved by Aristotle:
+
+- theorem distance_symmetric (p1 p2 : Point3D) :
+    distance p1 p2 = distance p2 p1
+
+- theorem distance_nonneg (p1 p2 : Point3D) :
+    distance p1 p2 ≥ 0
+
+- theorem distance_eq_zero_iff (p1 p2 : Point3D) :
+    distance p1 p2 = 0 ↔ p1 = p2
+
+- theorem sphere_volume_pos {r : ℝ} (hr : r > 0) :
+    sphere_volume r > 0
+
+- theorem sphere_volume_monotone {r1 r2 : ℝ} (h : r1 < r2) :
+    sphere_volume r1 < sphere_volume r2
+-/
+
+/-
 # Geometric Primitives for Multi-Conformer Molecular Proofs
 
 **AXIOM-FREE** library built on Mathlib for geometric impossibility proofs.
@@ -18,6 +43,7 @@ import Mathlib.Data.Real.Sqrt
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
 import Mathlib.Tactic.NormNum
+
 
 namespace BiochemFormal.Geometry
 
@@ -61,14 +87,18 @@ Distance is symmetric: d(p1, p2) = d(p2, p1)
 -/
 theorem distance_symmetric (p1 p2 : Point3D) :
     distance p1 p2 = distance p2 p1 := by
-  sorry -- Aristotle will prove this!
+  exact congr_arg Real.sqrt ( by ring )
+
+-- Aristotle will prove this!
 
 /--
 Distance is non-negative: d(p1, p2) ≥ 0
 -/
 theorem distance_nonneg (p1 p2 : Point3D) :
     distance p1 p2 ≥ 0 := by
-  sorry -- Aristotle will prove this!
+  exact Real.sqrt_nonneg _
+
+-- Aristotle will prove this!
 
 /--
 Distance is zero iff points are equal.
@@ -77,7 +107,10 @@ TODO: Let Aristotle prove this!
 -/
 theorem distance_eq_zero_iff (p1 p2 : Point3D) :
     distance p1 p2 = 0 ↔ p1 = p2 := by
-  sorry -- Aristotle will prove this
+  constructor <;> unfold BiochemFormal.Geometry.distance <;> aesop;
+  exact Prod.ext ( by nlinarith [ Real.sqrt_eq_zero'.mp a ] ) ( Prod.ext ( by nlinarith [ Real.sqrt_eq_zero'.mp a ] ) ( by nlinarith [ Real.sqrt_eq_zero'.mp a ] ) )
+
+-- Aristotle will prove this
 
 /-! ## Sphere Primitives -/
 
@@ -119,7 +152,9 @@ Sphere volume is positive for positive radius.
 -/
 theorem sphere_volume_pos {r : ℝ} (hr : r > 0) :
     sphere_volume r > 0 := by
-  sorry -- Aristotle will prove this from arithmetic!
+  exact mul_pos ( mul_pos ( by norm_num ) ( by norm_num [ BiochemFormal.Geometry.pi_approx ] ) ) ( pow_pos hr 3 )
+
+-- Aristotle will prove this from arithmetic!
 
 /--
 Sphere volume is monotone: larger radius → larger volume.
@@ -128,7 +163,9 @@ TODO: Let Aristotle prove this!
 -/
 theorem sphere_volume_monotone {r1 r2 : ℝ} (h : r1 < r2) :
     sphere_volume r1 < sphere_volume r2 := by
-  sorry -- Aristotle will prove this
+  exact mul_lt_mul_of_pos_left ( by nlinarith [ sq_nonneg ( r1^2 - r2^2 ), pow_pos ( sub_pos.mpr h ) 3 ] ) ( by exact mul_pos ( by norm_num ) ( show 0 < ( 22 / 7 : ℝ ) by norm_num ) )
+
+-- Aristotle will prove this
 
 /-! ## Bounding Sphere Structure -/
 
@@ -162,7 +199,9 @@ def mk_bounding_sphere (center : Point3D) (radius : ℝ) (h : radius ≥ 0) : Bo
 
 -- Verify NO custom axioms in key definitions
 #print axioms distance
+
 #print axioms sphere_volume
+
 #print axioms spheres_overlap
 
 end BiochemFormal.Geometry
