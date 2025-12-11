@@ -1,0 +1,190 @@
+{
+  "description": "20-molecule validation set for hERG safety theorem testing",
+  "validation_criteria": {
+    "false_negative_rate_target": 0.0,
+    "false_positive_acceptable": true,
+    "coverage_target": ">50% provable across size range"
+  },
+  "molecules": [
+    {
+      "name": "Metformin",
+      "smiles": "CN(C)C(=N)NC(=N)N",
+      "mw": 129.2,
+      "category": "tiny_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Pilot validated - 3 conformers, 4.11 Å radius"
+    },
+    {
+      "name": "Caffeine",
+      "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+      "mw": 194.2,
+      "category": "small_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Rigid aromatic, known NOT to block hERG"
+    },
+    {
+      "name": "Aspirin",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "mw": 180.2,
+      "category": "small_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Small NSAID, no hERG liability"
+    },
+    {
+      "name": "Glucose",
+      "smiles": "C(C1C(C(C(C(O1)O)O)O)O)O",
+      "mw": 180.2,
+      "category": "small_flexible",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Highly flexible, may have large bounding volume"
+    },
+    {
+      "name": "Terfenadine",
+      "smiles": "CC(C)(C)C1=CC=C(C=C1)C(CCCN2CCC(CC2)(C(=O)O)O)C3=CC=C(C=C3)O",
+      "mw": 471.7,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Known binder IC50=56nM - MUST NOT prove safe!"
+    },
+    {
+      "name": "Astemizole",
+      "smiles": "COC1=CC=C(C=C1)CC2=CN=C(N2C)NC3=CC=C(C=C3)F",
+      "mw": 458.6,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Known hERG blocker - withdrawn from market"
+    },
+    {
+      "name": "Cisapride",
+      "smiles": "CCC1=CC(=C(C=C1)OC)NC(=O)N2CCC(CC2)N3C=C(C=C3)C(=O)C4=CC=C(C=C4)F",
+      "mw": 465.9,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: hERG blocker - QT prolongation risk"
+    },
+    {
+      "name": "Dofetilide",
+      "smiles": "CN(C)S(=O)(=O)C1=CC=C(C=C1)OCCOCCNC2=CC=C(C=C2)NS(=O)(=O)C",
+      "mw": 441.6,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Class III antiarrhythmic - intentional hERG blocker"
+    },
+    {
+      "name": "Ibuprofen",
+      "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "mw": 206.3,
+      "category": "small_flexible",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Common NSAID, no hERG liability"
+    },
+    {
+      "name": "Atorvastatin",
+      "smiles": "CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+      "mw": 558.6,
+      "category": "large_flexible",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Statin - large but flexible, uncertain outcome"
+    },
+    {
+      "name": "Vancomycin",
+      "smiles": "CC1C(C(CC(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)C(NC(=O)C(C(C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)NC)O",
+      "mw": 1449.3,
+      "category": "very_large_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "Pilot validated - 9722 Å³ > 7798 Å³"
+    },
+    {
+      "name": "Cyclosporine",
+      "smiles": "CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C",
+      "mw": 1202.6,
+      "category": "very_large_flexible",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "Large cyclic peptide, likely >7798 Å³"
+    },
+    {
+      "name": "Erythromycin",
+      "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)O)(C)O",
+      "mw": 733.9,
+      "category": "large_flexible_UNCERTAIN",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Macrolide - some reports of QT prolongation, test conservativeness"
+    },
+    {
+      "name": "Azithromycin",
+      "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2C(C(CC(O2)C)N(C)C)O)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)N(C)C)O)(C)O",
+      "mw": 749.0,
+      "category": "large_flexible_UNCERTAIN",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Macrolide - QT prolongation risk, test conservativeness"
+    },
+    {
+      "name": "Gentamicin",
+      "smiles": "CNC1C(C(C(C(O1)OC2C(CC(C(C2O)OC3C(C(C(CO3)(C)O)NC)O)N)N)N)O)O",
+      "mw": 477.6,
+      "category": "medium_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Aminoglycoside - hydrophilic, unlikely to reach hERG"
+    },
+    {
+      "name": "Penicillin G",
+      "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "mw": 334.4,
+      "category": "medium_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Beta-lactam - compact, hydrophilic"
+    },
+    {
+      "name": "Warfarin",
+      "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+      "mw": 308.3,
+      "category": "medium_flexible",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Coumarin derivative - moderately flexible"
+    },
+    {
+      "name": "Sotalol",
+      "smiles": "CC(C)NCC(C1=CC=C(C=C1)NS(=O)(=O)C)O",
+      "mw": 272.4,
+      "category": "small_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Class III antiarrhythmic - intentional hERG blocker"
+    },
+    {
+      "name": "Quinidine",
+      "smiles": "C=CC1CN2CCC1C(C2)C(C3=CC=NC4=CC=C(C=C34)OC)O",
+      "mw": 324.4,
+      "category": "medium_rigid_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Class Ia antiarrhythmic - known hERG blocker"
+    },
+    {
+      "name": "Rapamycin",
+      "smiles": "COC1CC(CC(C1OC2CC(C(C(O2)(C)CC(C(C(=O)C(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C4(O4)C(C(C(CC(=O)CC(C(C(C(C(=O)O1)C)OC)C(C)CC(CC(=CC(=O)O2)C)C)C)C)O)C)C)C)C)O)C)O)C)C",
+      "mw": 914.2,
+      "category": "very_large_flexible",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "Large macrocyclic - likely >7798 Å³"
+    }
+  ]
+}
