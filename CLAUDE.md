@@ -113,6 +113,237 @@ Labels: case-study
 
 ---
 
+## Research & Problem Identification Workflow
+
+<research_workflow priority="critical">
+**For identifying and validating hard biochemistry problems suitable for formal verification.**
+
+### Phase 1: Parallel AI Research (30min)
+
+Launch 3 AI agents simultaneously to gather difficult biochemistry problems:
+
+```bash
+# 1. Grok (xAI) - Focused on critical issues
+python3 << 'EOF'
+import json
+prompt = """Identify 10 extremely difficult biochemistry problems that cause drug failures and could potentially be solved with formal verification (theorem proving).
+
+Focus on:
+- Problems that cost pharma $100M+ when they fail
+- Properties that are hard to predict experimentally
+- Safety issues discovered late in trials (Phase II/III)
+- Off-target effects, metabolic issues, toxicity
+
+For each problem, provide:
+1. Problem name
+2. Why it's hard/expensive
+3. What needs to be proved
+4. Example drug that failed due to this
+
+Be specific and technical."""
+
+req = {"messages": [{"role": "user", "content": prompt}], "model": "grok-4", "temperature": 0.3}
+json.dump(req, open('/tmp/grok_biochem_req.json', 'w'))
+EOF
+
+curl -X POST https://api.x.ai/v1/chat/completions \
+  -H "Authorization: Bearer $GROK_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d @/tmp/grok_biochem_req.json \
+  > research/grok_problems.json
+
+# 2. Gemini - Broad scientific analysis
+gemini -p "$(cat research/prompt_problems.txt)" > research/gemini_problems.md
+
+# 3. Codex CLI - Autonomous deep dive
+codex exec --full-auto "Research biochemistry problems suitable for formal verification. Focus on: (1) hERG cardiac toxicity, (2) CYP450 metabolism, (3) blood-brain barrier prediction, (4) protein aggregation. Output detailed analysis to research/codex_problems.md"
+```
+
+### Phase 2: Synthesis (15min)
+
+Combine all AI outputs:
+1. Read all 3 research files
+2. Identify common themes
+3. Rank by: (a) Business impact, (b) Technical feasibility, (c) Novelty
+4. Select top 10-15 problems
+
+### Phase 3: Issue Creation with Audit Loop (per problem)
+
+For EACH problem identified:
+
+```bash
+# 1. Create initial GitHub issue
+gh issue create --title "Prove [property]" --label "research" --body "$(cat << 'EOF'
+## Problem
+[Description from research]
+
+## Why It Matters
+[Business/scientific impact]
+
+## Approach (DRAFT - needs audit)
+[Initial formalization approach]
+
+## Acceptance Criteria
+- [ ] Formalized in Lean
+- [ ] Approach audited by 3 AIs
+- [ ] Proof strategy documented
+- [ ] Related theorems identified
+
+## Status
+🔴 Needs audit from Grok, Gemini, Codex
+EOF
+)"
+
+# 2. Get issue number
+ISSUE_NUM=$(gh issue list --limit 1 --json number --jq '.[0].number')
+
+# 3. PARALLEL AUDIT by 3 AIs
+# Launch all 3 simultaneously, collect results
+
+# Grok: Critical analysis
+python3 research/grok_audit.py $ISSUE_NUM > /tmp/grok_audit_${ISSUE_NUM}.md &
+GROK_PID=$!
+
+# Gemini: Scientific validation
+gemini -p "Review this approach: $(gh issue view $ISSUE_NUM)" > /tmp/gemini_audit_${ISSUE_NUM}.md &
+GEMINI_PID=$!
+
+# Codex: Implementation feasibility
+codex exec "Analyze feasibility: $(gh issue view $ISSUE_NUM --json body --jq .body)" > /tmp/codex_audit_${ISSUE_NUM}.md &
+CODEX_PID=$!
+
+# Wait for all audits
+wait $GROK_PID $GEMINI_PID $CODEX_PID
+
+# 4. Synthesize audits
+cat /tmp/*_audit_${ISSUE_NUM}.md | python3 research/synthesize_audits.py > research/issue_${ISSUE_NUM}_revised.md
+
+# 5. Update issue with revised approach
+gh issue edit $ISSUE_NUM --body "$(cat research/issue_${ISSUE_NUM}_revised.md)"
+
+# 6. Add audit summary as comment
+gh issue comment $ISSUE_NUM --body "## Audit Complete ✅
+
+**Grok**: [Key points]
+**Gemini**: [Key points]
+**Codex**: [Key points]
+
+**Consensus**: [Approach validated/needs revision]"
+```
+
+### Phase 4: Prioritization (10min)
+
+After all issues created and audited:
+
+```bash
+# Create project board
+gh project create --title "Biochemistry Formal Verification" --body "Prioritized problems"
+
+# Assign priorities based on audit consensus
+# Add to milestone based on difficulty/value
+```
+
+### Issue Body Template (Post-Audit)
+
+```markdown
+## Problem
+[Clear description of biochemistry issue]
+
+## Business Impact
+- **Cost of failure**: $XXX million
+- **Affected drugs**: [Examples]
+- **Current solutions**: [Why they fail]
+
+## Formal Verification Approach
+
+### What to Prove
+```lean
+theorem property_name (params) : conclusion := by
+  sorry
+```
+
+### Key Challenges
+1. [Challenge 1 and mitigation]
+2. [Challenge 2 and mitigation]
+
+### Required Background
+- Theorems: [Dependencies]
+- Data: [Experimental inputs needed]
+- Tools: [Aristotle, external integration]
+
+## Multi-AI Audit Results
+
+### 🔴 Grok (Critical Analysis)
+- **Feasibility**: [High/Medium/Low]
+- **Key Risk**: [Main concern]
+- **Recommendation**: [Proceed/Modify/Defer]
+
+### 🔵 Gemini (Scientific Validation)
+- **Scientific Accuracy**: [Assessment]
+- **Missing Considerations**: [Gaps]
+- **Related Work**: [Prior art]
+
+### 🟢 Codex (Implementation)
+- **Technical Feasibility**: [Assessment]
+- **Estimated Effort**: [Person-hours]
+- **Suggested Approach**: [Implementation strategy]
+
+## Consensus & Revised Approach
+[Synthesized final approach incorporating all feedback]
+
+## Acceptance Criteria
+- [ ] Lean formalization complete
+- [ ] Proof strategy validated
+- [ ] Test cases identified
+- [ ] Success metrics defined
+
+## Next Steps
+1. [Concrete action 1]
+2. [Concrete action 2]
+```
+
+### Workflow Automation Scripts
+
+Create these in `research/` directory:
+- `grok_audit.py` - Queries Grok API for critical analysis
+- `gemini_audit.sh` - Calls Gemini CLI with standard prompt
+- `codex_audit.sh` - Launches Codex with implementation focus
+- `synthesize_audits.py` - Combines 3 AI outputs into consensus
+
+### Quality Gates
+
+Before marking issue as "ready":
+- ✅ All 3 AIs reviewed
+- ✅ Consensus reached or disagreements documented
+- ✅ Approach is specific (not hand-wavy)
+- ✅ Success criteria are measurable
+- ✅ Business value quantified
+
+### Research Workflow Summary
+
+```
+Input: "Find hard biochemistry problems"
+  ↓
+[Parallel] Grok + Gemini + Codex research (30min)
+  ↓
+Synthesize → Top 10-15 problems (15min)
+  ↓
+For each problem:
+  - Create GitHub issue (5min)
+  - [Parallel] 3 AI audits (10min)
+  - Synthesize → Update issue (5min)
+  ↓
+Prioritize → Milestone assignment (10min)
+  ↓
+Output: 10-15 validated, ready-to-work issues
+```
+
+**Total time**: ~2-3 hours for complete research → validated issues pipeline
+
+</research_workflow>
+
+---
+
 ## The Opportunity
 
 ### Current Drug Discovery: Chaos
