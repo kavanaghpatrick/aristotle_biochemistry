@@ -1,0 +1,272 @@
+[
+  {
+    "name": "Atorvastatin",
+    "smiles": "CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+    "bounding_radius": 10.627274771927066,
+    "bounding_volume": 5027.526147512194,
+    "logp": 6.313600000000007,
+    "net_charge": 0,
+    "approx_dipole": 11.179000000000002,
+    "tpsa": 111.79000000000002,
+    "proof_methods": [
+      "electrostatic_charge",
+      "electrostatic_dipole"
+    ]
+  },
+  {
+    "name": "Erythromycin",
+    "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+    "bounding_radius": 9.893407301507011,
+    "bounding_volume": 4056.264587763118,
+    "logp": 1.785600000000004,
+    "net_charge": 0,
+    "approx_dipole": 19.391,
+    "tpsa": 193.91,
+    "proof_methods": [
+      "electrostatic_charge",
+      "electrostatic_dipole"
+    ]
+  },
+  {
+    "name": "Gentamicin",
+    "smiles": "CNC1C(C(C(C(O1)OC2C(CC(C(C2O)OC3C(C(C(CO3)(C)O)NC)O)N)N)N)O)O",
+    "bounding_radius": 8.585056131598426,
+    "bounding_volume": 2650.44030043894,
+    "logp": -5.816900000000001,
+    "net_charge": 2.220446049250313e-16,
+    "approx_dipole": 24.019000000000002,
+    "tpsa": 240.19000000000003,
+    "proof_methods": [
+      "electrostatic_dipole",
+      "hydrophobicity"
+    ]
+  },
+  {
+    "name": "Penicillin G",
+    "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+    "bounding_radius": 7.193398376501557,
+    "bounding_volume": 1559.1609423857408,
+    "logp": 0.8607999999999993,
+    "net_charge": 0,
+    "approx_dipole": 8.671000000000001,
+    "tpsa": 86.71000000000001,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Warfarin",
+    "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+    "bounding_radius": 6.764057533096105,
+    "bounding_volume": 1296.3148259142192,
+    "logp": 3.6096000000000035,
+    "net_charge": 4.996003610813204e-16,
+    "approx_dipole": 6.751,
+    "tpsa": 67.51,
+    "proof_methods": []
+  },
+  {
+    "name": "Naproxen",
+    "smiles": "CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O",
+    "bounding_radius": 6.595116652857211,
+    "bounding_volume": 1201.5893052741128,
+    "logp": 3.036500000000001,
+    "net_charge": 0.0,
+    "approx_dipole": 4.6530000000000005,
+    "tpsa": 46.53,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Propranolol",
+    "smiles": "CC(C)NCC(COC1=CC=CC2=CC=CC=C21)O",
+    "bounding_radius": 7.320693969781177,
+    "bounding_volume": 1643.4078835524706,
+    "logp": 2.577500000000001,
+    "net_charge": 0.0,
+    "approx_dipole": 4.148999999999999,
+    "tpsa": 41.489999999999995,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Atenolol",
+    "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O",
+    "bounding_radius": 8.288197905836158,
+    "bounding_volume": 2384.893265230368,
+    "logp": 0.4521,
+    "net_charge": -1.3877787807814457e-16,
+    "approx_dipole": 8.458,
+    "tpsa": 84.58,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Lisinopril",
+    "smiles": "C1CCC(C(C1)CCC(=O)N2CCCC2C(=O)O)N",
+    "bounding_radius": 6.506304621368241,
+    "bounding_volume": 1153.6970650497058,
+    "logp": 1.3597000000000001,
+    "net_charge": 0,
+    "approx_dipole": 8.363,
+    "tpsa": 83.63,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Simvastatin",
+    "smiles": "CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C",
+    "bounding_radius": 7.997781954537623,
+    "bounding_volume": 2142.87722138523,
+    "logp": 4.585600000000006,
+    "net_charge": -4.371503159461554e-16,
+    "approx_dipole": 7.283000000000001,
+    "tpsa": 72.83000000000001,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Rosuvastatin",
+    "smiles": "CC(C)C1=NC(=NC(=C1C=CC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)NS(=O)(=O)C",
+    "bounding_radius": 9.181653157272107,
+    "bounding_volume": 3242.285531423505,
+    "logp": 2.3774000000000006,
+    "net_charge": 0,
+    "approx_dipole": 14.971,
+    "tpsa": 149.71,
+    "proof_methods": [
+      "electrostatic_charge",
+      "electrostatic_dipole"
+    ]
+  },
+  {
+    "name": "Metoprolol",
+    "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CCOC)O",
+    "bounding_radius": 9.331508966997944,
+    "bounding_volume": 3403.644887187695,
+    "logp": 1.6131999999999997,
+    "net_charge": 8.326672684688674e-17,
+    "approx_dipole": 5.072,
+    "tpsa": 50.72,
+    "proof_methods": []
+  },
+  {
+    "name": "Omeprazole",
+    "smiles": "CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=CC(=C3)OC",
+    "bounding_radius": 9.078135907150017,
+    "bounding_volume": 3133.853207780473,
+    "logp": 2.8997400000000013,
+    "net_charge": -1.942890293094024e-16,
+    "approx_dipole": 7.710000000000001,
+    "tpsa": 77.10000000000001,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Fluoxetine",
+    "smiles": "CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F",
+    "bounding_radius": 6.920715897270856,
+    "bounding_volume": 1388.486537834065,
+    "logp": 4.435000000000003,
+    "net_charge": 1.6653345369377348e-16,
+    "approx_dipole": 2.126,
+    "tpsa": 21.259999999999998,
+    "proof_methods": []
+  },
+  {
+    "name": "Ciprofloxacin",
+    "smiles": "C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O",
+    "bounding_radius": 7.21162205342383,
+    "bounding_volume": 1571.040872037297,
+    "logp": 1.5833,
+    "net_charge": 0,
+    "approx_dipole": 7.457000000000001,
+    "tpsa": 74.57000000000001,
+    "proof_methods": [
+      "electrostatic_charge"
+    ]
+  },
+  {
+    "name": "Amoxicillin",
+    "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C",
+    "bounding_radius": 8.42486717715695,
+    "bounding_volume": 2504.8273542275165,
+    "logp": 0.023699999999999555,
+    "net_charge": 0,
+    "approx_dipole": 13.295999999999998,
+    "tpsa": 132.95999999999998,
+    "proof_methods": [
+      "electrostatic_charge",
+      "electrostatic_dipole"
+    ]
+  },
+  {
+    "name": "Doxycycline",
+    "smiles": "CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1CCCC4)O)O)O)C(=O)N)N(C)C)O",
+    "bounding_radius": 7.498797251749043,
+    "bounding_volume": 1766.2958313355264,
+    "logp": 0.03620000000000256,
+    "net_charge": 1.27675647831893e-15,
+    "approx_dipole": 16.139000000000003,
+    "tpsa": 161.39000000000001,
+    "proof_methods": [
+      "electrostatic_dipole"
+    ]
+  },
+  {
+    "name": "Paclitaxel",
+    "smiles": "CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+    "bounding_radius": 12.177070233486747,
+    "bounding_volume": 7563.399526935631,
+    "logp": 3.735700000000004,
+    "net_charge": -9.853229343548264e-16,
+    "approx_dipole": 22.128999999999998,
+    "tpsa": 221.28999999999996,
+    "proof_methods": [
+      "electrostatic_charge",
+      "electrostatic_dipole"
+    ]
+  },
+  {
+    "name": "Colchicine",
+    "smiles": "CC(=O)NC1CCC2=CC(=C(C(=C2C3=CC=C(C(=O)C=C13)OC)OC)OC)OC",
+    "bounding_radius": 7.716679388781188,
+    "bounding_volume": 1924.7750444205647,
+    "logp": 2.8716000000000017,
+    "net_charge": 5.273559366969494e-16,
+    "approx_dipole": 8.309000000000001,
+    "tpsa": 83.09000000000002,
+    "proof_methods": []
+  },
+  {
+    "name": "Tamoxifen",
+    "smiles": "CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3",
+    "bounding_radius": 9.24875980614398,
+    "bounding_volume": 3313.8978073822473,
+    "logp": 5.996100000000006,
+    "net_charge": 2.636779683484747e-16,
+    "approx_dipole": 1.247,
+    "tpsa": 12.47,
+    "proof_methods": []
+  },
+  {
+    "name": "Methotrexate",
+    "smiles": "CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O",
+    "bounding_radius": 10.701758006794284,
+    "bounding_volume": 5133.97782059149,
+    "logp": 0.2684000000000003,
+    "net_charge": 0,
+    "approx_dipole": 21.053999999999995,
+    "tpsa": 210.53999999999996,
+    "proof_methods": [
+      "electrostatic_charge",
+      "electrostatic_dipole"
+    ]
+  }
+]
