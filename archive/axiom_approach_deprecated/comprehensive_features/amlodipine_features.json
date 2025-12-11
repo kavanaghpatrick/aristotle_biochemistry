@@ -1,0 +1,118 @@
+{
+  "molecule_name": "amlodipine",
+  "smiles": "CCOC(=O)C1=C(NC(=C(C1C2=CC=CC=C2Cl)C(=O)OC)C)COCCN",
+  "molecular_weight": 408.88,
+  "logp": 2.27,
+  "num_h_donors": 2,
+  "num_h_acceptors": 7,
+  "features": [
+    {
+      "id": "cation_N7",
+      "kind": "Cationic",
+      "coord": [
+        "11631718357/8434485399",
+        "-6197685585/3602852488",
+        "-689416774/675657217"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 7
+    },
+    {
+      "id": "cation_N27",
+      "kind": "Cationic",
+      "coord": [
+        "16847384569/3435717228",
+        "3265805657/8390968540",
+        "19763563824/5903140097"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 27
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-16923287668/5879061357",
+        "3211556319/6233940532",
+        "-9459051743/5778771657"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        11
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-14576265091/7858821484",
+        "1184653454/5929918765",
+        "-5741224534/7467174937"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N7",
+      "to": "cation_N27",
+      "distance": 5.996197525967988
+    },
+    {
+      "from": "cation_N7",
+      "to": "aromatic_ring0",
+      "distance": 4.848144075227112
+    },
+    {
+      "from": "cation_N7",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.769255776717418
+    },
+    {
+      "from": "cation_N27",
+      "to": "aromatic_ring0",
+      "distance": 9.242653128126348
+    },
+    {
+      "from": "cation_N27",
+      "to": "hydrophobe_cluster0",
+      "distance": 7.915789634907367
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.37879527414863
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

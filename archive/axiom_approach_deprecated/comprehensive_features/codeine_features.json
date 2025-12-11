@@ -1,0 +1,93 @@
+{
+  "molecule_name": "codeine",
+  "smiles": "COC1=C2C3CC4C(C3CC2=CC=C1)NC5C4C(=O)CCC5O",
+  "molecular_weight": 313.4,
+  "logp": 1.65,
+  "num_h_donors": 2,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N14",
+      "kind": "Cationic",
+      "coord": [
+        "-9211774979/5193385269",
+        "14900602442/9953895239",
+        "-12821819325/9532710688"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 14
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "20891897063/7499516696",
+        "6871748087/8730826899",
+        "3214407787/2376656140"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        13,
+        12,
+        11,
+        10,
+        3
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "5014177976/9841118719",
+        "2640650128/7835517071",
+        "3181079229/9718149166"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        19,
+        20
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N14",
+      "to": "aromatic_ring0",
+      "distance": 5.34507186354371
+    },
+    {
+      "from": "cation_N14",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.0586923113070816
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.5366960166467587
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 3
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

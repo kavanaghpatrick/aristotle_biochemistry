@@ -1,0 +1,129 @@
+{
+  "molecule_name": "fluoxetine",
+  "smiles": "CNCCC(C1=CC=C(C=C1)OC(F)(F)F)C2=CC=CC=C2",
+  "molecular_weight": 309.33,
+  "logp": 4.33,
+  "num_h_donors": 1,
+  "num_h_acceptors": 2,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "-9717139553/2620277494",
+        "13916004925/7211506652",
+        "-6930847755/8410323046"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "9099537610/3815549749",
+        "3301440223/6669735383",
+        "-3824309047/7246442024"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        5
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "-1248146971/1105075195",
+        "-21223197352/8632412893",
+        "130262022/163004417"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        16
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "12907426565/9484850084",
+        "-3811845893/7041886220",
+        "684219964/7571503893"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring0",
+      "distance": 6.266932813921008
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring1",
+      "distance": 5.342527870963536
+    },
+    {
+      "from": "cation_N1",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.713121132363927
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 4.778541889099482
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.582586403667308
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.2217714951370677
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

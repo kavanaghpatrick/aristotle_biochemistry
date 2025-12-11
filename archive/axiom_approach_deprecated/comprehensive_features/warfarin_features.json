@@ -1,0 +1,135 @@
+{
+  "molecule_name": "warfarin",
+  "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+  "molecular_weight": 308.33,
+  "logp": 3.61,
+  "num_h_donors": 1,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-15866644868/6110089247",
+        "-4002744652/1935904891",
+        "-5838334633/8107329068"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        5
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "11527977747/8533148773",
+        "1836923001/9546565226",
+        "2544002083/1997244343"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        12,
+        13,
+        18,
+        19,
+        20,
+        11
+      ]
+    },
+    {
+      "id": "aromatic_ring2",
+      "kind": "Aromatic",
+      "coord": [
+        "30660376537/8464068241",
+        "356423773/7642945313",
+        "824710783/1730277190"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        13
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-232520401/5319871332",
+        "-3368107628/7060911583",
+        "-271478178/4103120855"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 4.966710732664799
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring2",
+      "distance": 6.676897451506319
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.0783141973406427
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "aromatic_ring2",
+      "distance": 2.411669206016522
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.0466129746524344
+    },
+    {
+      "from": "aromatic_ring2",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.742899426908345
+    }
+  ],
+  "feature_counts": {
+    "cationic": 0,
+    "aromatic": 3,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

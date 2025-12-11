@@ -1,0 +1,98 @@
+{
+  "molecule_name": "naproxen",
+  "smiles": "COC1=CC2=C(C=C1)C=C(C=C2)C(C)C(=O)O",
+  "molecular_weight": 230.26,
+  "logp": 3.04,
+  "num_h_donors": 1,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "5346980198/2793433815",
+        "-342797351/7553687261",
+        "417845709/8787188440"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "-4393102630/8855107671",
+        "-3259429757/8815737427",
+        "-519833127/9936547717"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        8,
+        9,
+        10,
+        11,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-2874356859/9578736821",
+        "-356800565/4201157491",
+        "1375127020/8456854211"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 2.434009513998429
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.2175411851785762
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.4070997968153607
+    }
+  ],
+  "feature_counts": {
+    "cationic": 0,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 3
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

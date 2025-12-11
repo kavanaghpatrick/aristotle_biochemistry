@@ -1,0 +1,85 @@
+{
+  "molecule_name": "acetaminophen",
+  "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+  "molecular_weight": 151.17,
+  "logp": 1.35,
+  "num_h_donors": 2,
+  "num_h_acceptors": 2,
+  "features": [
+    {
+      "id": "cation_N3",
+      "kind": "Cationic",
+      "coord": [
+        "-12532280346/9171917465",
+        "-3275712581/8090057472",
+        "-376325347/1438237109"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 3
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "12339109329/8481411569",
+        "-233596145/3645724448",
+        "-570097407/7177244413"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4,
+        9,
+        8,
+        7,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "1015310617/2483234296",
+        "-316917952/8081888121",
+        "10495929/1756429301"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        5,
+        6,
+        8,
+        9
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring0",
+      "distance": 2.847566715964242
+    },
+    {
+      "from": "cation_N3",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.8321682714471272
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.0497507511151571
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 3
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

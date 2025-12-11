@@ -1,0 +1,117 @@
+{
+  "molecule_name": "penicillin",
+  "smiles": "CC1(C)SC2C(NC(=O)CC3=CC=CC=C3)C(=O)N2C1C(=O)O",
+  "molecular_weight": 334.4,
+  "logp": 0.86,
+  "num_h_donors": 2,
+  "num_h_acceptors": 5,
+  "features": [
+    {
+      "id": "cation_N6",
+      "kind": "Cationic",
+      "coord": [
+        "2485544479/2381344857",
+        "1228563015/9201725117",
+        "-3681964757/5471289875"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 6
+    },
+    {
+      "id": "cation_N18",
+      "kind": "Cationic",
+      "coord": [
+        "-11518098587/5513859952",
+        "4036043267/6245562384",
+        "-4805115207/7114208767"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 18
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "7320923502/1407279817",
+        "-70907341/6955126316",
+        "1620514191/4649169071"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        10
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "17877871816/9960546389",
+        "-568513539/1236991495",
+        "3019511093/9950350671"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N6",
+      "to": "cation_N18",
+      "distance": 3.1743723557052186
+    },
+    {
+      "from": "cation_N6",
+      "to": "aromatic_ring0",
+      "distance": 4.284465645895324
+    },
+    {
+      "from": "cation_N6",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.3672381154472881
+    },
+    {
+      "from": "cation_N18",
+      "to": "aromatic_ring0",
+      "distance": 7.391874387875791
+    },
+    {
+      "from": "cation_N18",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.155115364653908
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.4371161383225757
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

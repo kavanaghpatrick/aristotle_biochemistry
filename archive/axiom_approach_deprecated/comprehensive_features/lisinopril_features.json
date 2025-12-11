@@ -1,0 +1,119 @@
+{
+  "molecule_name": "lisinopril",
+  "smiles": "C1CC(C(=O)N1C(CCC2=CC=CC=C2)C(=O)O)CCCCN",
+  "molecular_weight": 318.42,
+  "logp": 2.05,
+  "num_h_donors": 2,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N5",
+      "kind": "Cationic",
+      "coord": [
+        "-543035684/7455311277",
+        "-310167557/207853300",
+        "-1148385872/7364558909"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 5
+    },
+    {
+      "id": "cation_N22",
+      "kind": "Cationic",
+      "coord": [
+        "10434303844/2556398765",
+        "961591037/444962292",
+        "1310676253/5266510427"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 22
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-23549210743/4690906006",
+        "17806449947/8274329309",
+        "688115638/9881815157"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        9
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-1202911309/840050669",
+        "6019482538/9624570277",
+        "-518970369/4226877700"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N5",
+      "to": "cation_N22",
+      "distance": 5.5470900629168245
+    },
+    {
+      "from": "cation_N5",
+      "to": "aromatic_ring0",
+      "distance": 6.148795939974842
+    },
+    {
+      "from": "cation_N5",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.5165088899270573
+    },
+    {
+      "from": "cation_N22",
+      "to": "aromatic_ring0",
+      "distance": 9.103594705266321
+    },
+    {
+      "from": "cation_N22",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.735503062558016
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.904214793587913
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

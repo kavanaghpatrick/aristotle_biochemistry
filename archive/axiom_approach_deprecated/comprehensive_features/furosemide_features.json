@@ -1,0 +1,153 @@
+{
+  "molecule_name": "furosemide",
+  "smiles": "C1=CC(=C(C=C1Cl)S(=O)(=O)N)C(=O)NCC2=CC=CO2",
+  "molecular_weight": 314.75,
+  "logp": 1.51,
+  "num_h_donors": 2,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N10",
+      "kind": "Cationic",
+      "coord": [
+        "-4737964595/1094557004",
+        "16768705561/7874082192",
+        "-2449733564/5521306297"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 10
+    },
+    {
+      "id": "cation_N13",
+      "kind": "Cationic",
+      "coord": [
+        "11393198600/9704086663",
+        "79164433/3041192178",
+        "67055204/176459575"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 13
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-23110710991/9880847527",
+        "-12515388591/8787789163",
+        "355531637/7723916868"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "11573801821/2584784598",
+        "813044747/8229688910",
+        "-1521332501/3169799402"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        16,
+        15,
+        19,
+        18,
+        17
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-7325816011/5850269530",
+        "-4239791100/4796313991",
+        "-1599225281/5772255102"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        16,
+        17
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N10",
+      "to": "cation_N13",
+      "distance": 5.948398533710368
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring0",
+      "distance": 4.102219974680303
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring1",
+      "distance": 9.037526512479323
+    },
+    {
+      "from": "cation_N10",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.309744502976154
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring0",
+      "distance": 3.8152104986037205
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring1",
+      "distance": 3.414470135812618
+    },
+    {
+      "from": "cation_N13",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.6733237064418183
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 7.004442658998616
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.2558561553765415
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.81709235422966
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

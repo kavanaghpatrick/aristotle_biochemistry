@@ -1,0 +1,126 @@
+{
+  "molecule_name": "clopidogrel",
+  "smiles": "COC(=O)C(C1=CC=CC=C1Cl)N2CC=C(C2)C3=CC=CS3",
+  "molecular_weight": 333.84,
+  "logp": 4.01,
+  "num_h_donors": 0,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N12",
+      "kind": "Cationic",
+      "coord": [
+        "962360809/8581688174",
+        "-3372096605/5692125497",
+        "5468896664/9806532851"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 12
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-26575771204/7525508933",
+        "-9887549170/8168600321",
+        "6924882051/8692909813"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        5
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "33726861671/6642328830",
+        "544424678/8693982161",
+        "-521573198/6222517325"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        18,
+        17,
+        21,
+        20,
+        19
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "1415777623/3528480701",
+        "-5787798027/8623870763",
+        "799226537/9279995016"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N12",
+      "to": "aromatic_ring0",
+      "distance": 3.703324554385955
+    },
+    {
+      "from": "cation_N12",
+      "to": "aromatic_ring1",
+      "distance": 5.049359735082938
+    },
+    {
+      "from": "cation_N12",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.5586961904462017
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 8.747031183502564
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.032556627808904
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.736589255459705
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

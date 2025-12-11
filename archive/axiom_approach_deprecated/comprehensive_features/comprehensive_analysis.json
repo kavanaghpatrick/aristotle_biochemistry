@@ -1,0 +1,923 @@
+{
+  "dataset": "Comprehensive drug dataset for hERG coverage analysis",
+  "total_molecules": 48,
+  "successful": 47,
+  "certifiable_count": 7,
+  "certifiable_percentage": 14.893617021276595,
+  "results": [
+    {
+      "name": "metformin",
+      "category": "metabolic",
+      "class": "antidiabetic",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 5,
+        "aromatic": 0,
+        "hydrophobic": 0,
+        "total": 5
+      },
+      "certifiable": true,
+      "missing_features": [
+        "aromatic",
+        "hydrophobic"
+      ],
+      "reason": "Missing: aromatic, hydrophobic",
+      "expected_certifiable": true,
+      "prediction_correct": true
+    },
+    {
+      "name": "aspirin",
+      "category": "otc",
+      "class": "nsaid",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 0,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 2
+      },
+      "certifiable": true,
+      "missing_features": [
+        "cationic"
+      ],
+      "reason": "Missing: cationic",
+      "expected_certifiable": true,
+      "prediction_correct": true
+    },
+    {
+      "name": "acetaminophen",
+      "category": "otc",
+      "class": "analgesic",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "ibuprofen",
+      "category": "otc",
+      "class": "nsaid",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 0,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 2
+      },
+      "certifiable": true,
+      "missing_features": [
+        "cationic"
+      ],
+      "reason": "Missing: cationic",
+      "expected_certifiable": true,
+      "prediction_correct": true
+    },
+    {
+      "name": "naproxen",
+      "category": "otc",
+      "class": "nsaid",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 0,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "certifiable": true,
+      "missing_features": [
+        "cationic"
+      ],
+      "reason": "Missing: cationic",
+      "expected_certifiable": true,
+      "prediction_correct": true
+    },
+    {
+      "name": "penicillin",
+      "category": "antibiotic",
+      "class": "beta-lactam",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "amoxicillin",
+      "category": "antibiotic",
+      "class": "beta-lactam",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "ciprofloxacin",
+      "category": "antibiotic",
+      "class": "fluoroquinolone",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "levofloxacin",
+      "category": "antibiotic",
+      "class": "fluoroquinolone",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "azithromycin",
+      "category": "antibiotic",
+      "class": "macrolide",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 0,
+        "hydrophobic": 1,
+        "total": 2
+      },
+      "certifiable": true,
+      "missing_features": [
+        "aromatic"
+      ],
+      "reason": "Missing: aromatic",
+      "expected_certifiable": false,
+      "prediction_correct": false
+    },
+    {
+      "name": "vancomycin",
+      "category": "antibiotic",
+      "class": "glycopeptide",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 3,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "tetracycline",
+      "category": "antibiotic",
+      "class": "tetracycline",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "doxycycline",
+      "category": "antibiotic",
+      "class": "tetracycline",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "erythromycin",
+      "category": "antibiotic",
+      "class": "macrolide",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 0,
+        "hydrophobic": 1,
+        "total": 2
+      },
+      "certifiable": true,
+      "missing_features": [
+        "aromatic"
+      ],
+      "reason": "Missing: aromatic",
+      "expected_certifiable": false,
+      "prediction_correct": false
+    },
+    {
+      "name": "furosemide",
+      "category": "cardiovascular",
+      "class": "diuretic",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "hydrochlorothiazide",
+      "category": "cardiovascular",
+      "class": "diuretic",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "lisinopril",
+      "category": "cardiovascular",
+      "class": "ace_inhibitor",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "enalapril",
+      "category": "cardiovascular",
+      "class": "ace_inhibitor",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "atenolol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "propranolol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "metoprolol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "carvedilol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 4,
+        "hydrophobic": 1,
+        "total": 7
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "amlodipine",
+      "category": "cardiovascular",
+      "class": "calcium_blocker",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "warfarin",
+      "category": "cardiovascular",
+      "class": "anticoagulant",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 0,
+        "aromatic": 3,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": true,
+      "missing_features": [
+        "cationic"
+      ],
+      "reason": "Missing: cationic",
+      "expected_certifiable": true,
+      "prediction_correct": true
+    },
+    {
+      "name": "clopidogrel",
+      "category": "cardiovascular",
+      "class": "antiplatelet",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "sertraline",
+      "category": "cns",
+      "class": "ssri",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "fluoxetine",
+      "category": "cns",
+      "class": "ssri",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "citalopram",
+      "category": "cns",
+      "class": "ssri",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "paroxetine",
+      "category": "cns",
+      "class": "ssri",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "venlafaxine",
+      "category": "cns",
+      "class": "snri",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "duloxetine",
+      "category": "cns",
+      "class": "snri",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "lorazepam",
+      "category": "cns",
+      "class": "benzodiazepine",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "diazepam",
+      "category": "cns",
+      "class": "benzodiazepine",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "alprazolam",
+      "category": "cns",
+      "class": "benzodiazepine",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "morphine",
+      "category": "cns",
+      "class": "opioid",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "codeine",
+      "category": "cns",
+      "class": "opioid",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 1,
+        "hydrophobic": 1,
+        "total": 3
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "insulin_glargine",
+      "category": "metabolic",
+      "status": "SKIPPED",
+      "reason": "Peptide"
+    },
+    {
+      "name": "sitagliptin",
+      "category": "metabolic",
+      "class": "dpp4_inhibitor",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 6,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 9
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "glipizide",
+      "category": "metabolic",
+      "class": "sulfonylurea",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "pioglitazone",
+      "category": "metabolic",
+      "class": "glitazone",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "levothyroxine",
+      "category": "metabolic",
+      "class": "thyroid",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "allopurinol",
+      "category": "metabolic",
+      "class": "xanthine_oxidase_inhibitor",
+      "herg_known": "non_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 4,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 7
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "colchicine",
+      "category": "metabolic",
+      "class": "gout",
+      "herg_known": "weak_binder",
+      "fda_status": "approved",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": true,
+      "prediction_correct": false
+    },
+    {
+      "name": "terfenadine",
+      "category": "withdrawn",
+      "class": "antihistamine",
+      "herg_known": "strong_binder",
+      "fda_status": "withdrawn_1997",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "cisapride",
+      "category": "withdrawn",
+      "class": "prokinetic",
+      "herg_known": "strong_binder",
+      "fda_status": "withdrawn_2000",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "astemizole",
+      "category": "withdrawn",
+      "class": "antihistamine",
+      "herg_known": "strong_binder",
+      "fda_status": "withdrawn_1999",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 2,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 5
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "grepafloxacin",
+      "category": "withdrawn",
+      "class": "fluoroquinolone",
+      "herg_known": "strong_binder",
+      "fda_status": "withdrawn_1999",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 3,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 6
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    },
+    {
+      "name": "terodiline",
+      "category": "withdrawn",
+      "class": "anticholinergic",
+      "herg_known": "strong_binder",
+      "fda_status": "withdrawn_1991",
+      "status": "SUCCESS",
+      "feature_counts": {
+        "cationic": 1,
+        "aromatic": 2,
+        "hydrophobic": 1,
+        "total": 4
+      },
+      "certifiable": false,
+      "missing_features": [],
+      "reason": "Has all pharmacophore features",
+      "expected_certifiable": false,
+      "prediction_correct": true
+    }
+  ]
+}

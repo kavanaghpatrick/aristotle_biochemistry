@@ -1,0 +1,186 @@
+{
+  "molecule_name": "levofloxacin",
+  "smiles": "CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O",
+  "molecular_weight": 361.37,
+  "logp": 1.54,
+  "num_h_donors": 1,
+  "num_h_acceptors": 7,
+  "features": [
+    {
+      "id": "cation_N6",
+      "kind": "Cationic",
+      "coord": [
+        "24420201995/9389526616",
+        "-6398742258/8258162117",
+        "-1632278643/4947642398"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 6
+    },
+    {
+      "id": "cation_N15",
+      "kind": "Cationic",
+      "coord": [
+        "-4342437521/2116661785",
+        "1990245371/3508513939",
+        "17034229/116430479"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 15
+    },
+    {
+      "id": "cation_N18",
+      "kind": "Cationic",
+      "coord": [
+        "-39965936303/8567397864",
+        "-4651577701/8353162497",
+        "86444294/3074839217"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 18
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "24458268957/8104978499",
+        "1738509307/3163826974",
+        "-473653357/1595703751"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        7,
+        8,
+        9,
+        11,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "4456356235/6312539417",
+        "12022271758/9661147017",
+        "-419020837/7666082439"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        12,
+        13,
+        14,
+        4,
+        5,
+        11
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "289683884/206626433",
+        "981681227/750812207",
+        "1857619961/9984965811"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        8,
+        11,
+        12,
+        13,
+        22
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N6",
+      "to": "cation_N15",
+      "distance": 4.865418324216274
+    },
+    {
+      "from": "cation_N6",
+      "to": "cation_N18",
+      "distance": 7.277758460436376
+    },
+    {
+      "from": "cation_N6",
+      "to": "aromatic_ring0",
+      "distance": 1.3887963265056726
+    },
+    {
+      "from": "cation_N6",
+      "to": "aromatic_ring1",
+      "distance": 2.7827101789654747
+    },
+    {
+      "from": "cation_N6",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.4575361283926607
+    },
+    {
+      "from": "cation_N15",
+      "to": "cation_N18",
+      "distance": 2.84730647800802
+    },
+    {
+      "from": "cation_N15",
+      "to": "aromatic_ring0",
+      "distance": 5.088597389217398
+    },
+    {
+      "from": "cation_N15",
+      "to": "aromatic_ring1",
+      "distance": 2.84652719533335
+    },
+    {
+      "from": "cation_N15",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.5321827861047534
+    },
+    {
+      "from": "cation_N18",
+      "to": "aromatic_ring0",
+      "distance": 7.768623795298548
+    },
+    {
+      "from": "cation_N18",
+      "to": "aromatic_ring1",
+      "distance": 5.665447572211695
+    },
+    {
+      "from": "cation_N18",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.348818875366413
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 2.4260324358944607
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.848853936698974
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.7391594767845526
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 6
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

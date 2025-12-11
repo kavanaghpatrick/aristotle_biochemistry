@@ -1,0 +1,159 @@
+{
+  "molecule_name": "astemizole",
+  "smiles": "COC1=CC=C(C=C1)CCN2CCC(CC2)NC(=O)C3=CC=C(C=C3)F",
+  "molecular_weight": 356.44,
+  "logp": 3.27,
+  "num_h_donors": 1,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N10",
+      "kind": "Cationic",
+      "coord": [
+        "-3001002273/7904132821",
+        "-232481129/2742723954",
+        "1808958875/3338491617"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 10
+    },
+    {
+      "id": "cation_N16",
+      "kind": "Cationic",
+      "coord": [
+        "8672987607/2436790358",
+        "13386524/1520182621",
+        "-5403970562/9747146021"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 16
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-148312277/27014703",
+        "857009338/9566835307",
+        "1077580211/7268801347"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "70202138281/9723477629",
+        "-711892717/9570782578",
+        "3641821831/5859592347"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        19
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "4504392277/2500000000",
+        "208051817/4757026069",
+        "3042347615/7052046067"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        14,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N10",
+      "to": "cation_N16",
+      "distance": 4.0896418143771855
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring0",
+      "distance": 5.128482070247204
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring1",
+      "distance": 7.599958806436831
+    },
+    {
+      "from": "cation_N10",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.1880021612280576
+    },
+    {
+      "from": "cation_N16",
+      "to": "aromatic_ring0",
+      "distance": 9.076841517967642
+    },
+    {
+      "from": "cation_N16",
+      "to": "aromatic_ring1",
+      "distance": 3.845811626348911
+    },
+    {
+      "from": "cation_N16",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.0153492389129974
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 12.719781809459922
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 7.29745466251957
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.422722685943254
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

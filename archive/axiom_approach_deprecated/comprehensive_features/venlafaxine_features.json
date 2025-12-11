@@ -1,0 +1,91 @@
+{
+  "molecule_name": "venlafaxine",
+  "smiles": "COC1=CC=C(C=C1)C(CN(C)C)C2(CCCCC2)O",
+  "molecular_weight": 277.41,
+  "logp": 3.04,
+  "num_h_donors": 1,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N10",
+      "kind": "Cationic",
+      "coord": [
+        "-236535741/4547084522",
+        "7672441707/2601480842",
+        "437587301/6459864933"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 10
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "19206311452/9105337033",
+        "-592810787/4106749652",
+        "994577849/8078482585"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-1104100358/4815906131",
+        "-9638583403/9582292133",
+        "1645627680/6920317673"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring0",
+      "distance": 3.7742535009550497
+    },
+    {
+      "from": "cation_N10",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.962753845166057
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.49488719163739
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 3
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

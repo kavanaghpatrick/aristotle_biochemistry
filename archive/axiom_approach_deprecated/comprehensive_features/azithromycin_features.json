@@ -1,0 +1,70 @@
+{
+  "molecule_name": "azithromycin",
+  "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+  "molecular_weight": 733.94,
+  "logp": 1.79,
+  "num_h_donors": 5,
+  "num_h_acceptors": 14,
+  "features": [
+    {
+      "id": "cation_N40",
+      "kind": "Cationic",
+      "coord": [
+        "71405011043/9996113797",
+        "3999932801/6833573712",
+        "-846846841/3208972611"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 40
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-1602898691/3548528085",
+        "-5602005853/9774149934",
+        "-922483378/7718214131"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        5,
+        8,
+        9,
+        12,
+        14,
+        18,
+        21,
+        26,
+        28,
+        31,
+        36,
+        39,
+        44,
+        46,
+        47,
+        49
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N40",
+      "to": "hydrophobe_cluster0",
+      "distance": 7.684186506006261
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 0,
+    "hydrophobic": 1,
+    "total": 2
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

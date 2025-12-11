@@ -1,0 +1,115 @@
+{
+  "molecule_name": "tetracycline",
+  "smiles": "CN(C)C1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)O)O",
+  "molecular_weight": 446.41,
+  "logp": -1.57,
+  "num_h_donors": 7,
+  "num_h_acceptors": 10,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "-14483318338/9199041845",
+        "-1531839354/3129280229",
+        "-1361792271/622736180"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "cation_N29",
+      "kind": "Cationic",
+      "coord": [
+        "49508557832/8897724259",
+        "-8856590409/8230237532",
+        "-15170612574/9052051525"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 29
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-24329601785/6395586956",
+        "1783218061/2069353969",
+        "2592298123/5587960310"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        19,
+        20,
+        21,
+        22,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-13596083230/8608870663",
+        "1268544919/4687970818",
+        "4127206279/9794484311"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4,
+        6,
+        10,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "cation_N29",
+      "distance": 7.180873948526973
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring0",
+      "distance": 3.718003709575108
+    },
+    {
+      "from": "cation_N1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.716678634702392
+    },
+    {
+      "from": "cation_N29",
+      "to": "aromatic_ring0",
+      "distance": 9.80302220814058
+    },
+    {
+      "from": "cation_N29",
+      "to": "hydrophobe_cluster0",
+      "distance": 7.565831565800509
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.3023977040818817
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

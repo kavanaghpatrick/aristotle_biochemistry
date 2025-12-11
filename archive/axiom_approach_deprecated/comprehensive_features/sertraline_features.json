@@ -1,0 +1,131 @@
+{
+  "molecule_name": "sertraline",
+  "smiles": "CNC1CCC(C2=CC=C(C=C12)Cl)C3=CC(=C(C=C3)Cl)Cl",
+  "molecular_weight": 340.68,
+  "logp": 5.83,
+  "num_h_donors": 1,
+  "num_h_acceptors": 1,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "-28755236471/8103456879",
+        "-7855471411/6693985144",
+        "-2588424931/8916168671"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-9728388274/9626316783",
+        "10972089459/6898777036",
+        "-5587651576/7279023831"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        6
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "27588883876/8041964933",
+        "-604661073/5597927524",
+        "1136290723/3933549803"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        13
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "7786519121/6051421273",
+        "2542861981/5313724496",
+        "-182026447/2512766953"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring0",
+      "distance": 3.782627109551989
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring1",
+      "distance": 7.083712343645251
+    },
+    {
+      "from": "cation_N1",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.114324152600749
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 4.870870506254045
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.645246126771
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.2518572688394918
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

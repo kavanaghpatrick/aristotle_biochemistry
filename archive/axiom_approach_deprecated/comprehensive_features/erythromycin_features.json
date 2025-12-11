@@ -1,0 +1,69 @@
+{
+  "molecule_name": "erythromycin",
+  "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+  "molecular_weight": 719.91,
+  "logp": 1.4,
+  "num_h_donors": 5,
+  "num_h_acceptors": 14,
+  "features": [
+    {
+      "id": "cation_N39",
+      "kind": "Cationic",
+      "coord": [
+        "46230457544/7205016893",
+        "2066832991/1217416221",
+        "19198649609/8015471424"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 39
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-3929602543/6331838942",
+        "-12102246838/9785039487",
+        "-792744423/9420138502"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        5,
+        8,
+        9,
+        12,
+        14,
+        18,
+        21,
+        26,
+        30,
+        35,
+        38,
+        43,
+        45,
+        46,
+        48
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N39",
+      "to": "hydrophobe_cluster0",
+      "distance": 8.017390285013214
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 0,
+    "hydrophobic": 1,
+    "total": 2
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

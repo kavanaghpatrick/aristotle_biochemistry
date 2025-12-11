@@ -1,0 +1,114 @@
+{
+  "molecule_name": "atenolol",
+  "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O",
+  "molecular_weight": 266.34,
+  "logp": 0.45,
+  "num_h_donors": 3,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N3",
+      "kind": "Cationic",
+      "coord": [
+        "-31908830093/8957774327",
+        "3029191821/4373905369",
+        "-133979495/5029268384"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 3
+    },
+    {
+      "id": "cation_N17",
+      "kind": "Cationic",
+      "coord": [
+        "12821674938/1935628745",
+        "3528652545/6442205444",
+        "-3471334949/4635342903"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 17
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "14214513442/4964245015",
+        "-7254038422/6452012147",
+        "2951825401/5617168633"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        8,
+        13,
+        12,
+        11,
+        10,
+        9
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "3551975207/2529761382",
+        "-27504033/128279666",
+        "4114395220/8124434901"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        2,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N3",
+      "to": "cation_N17",
+      "distance": 10.212774308870038
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring0",
+      "distance": 6.700233575263434
+    },
+    {
+      "from": "cation_N3",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.07641798984477
+    },
+    {
+      "from": "cation_N17",
+      "to": "aromatic_ring0",
+      "distance": 4.308403431233423
+    },
+    {
+      "from": "cation_N17",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.42260593525837
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.7198395106835898
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

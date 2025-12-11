@@ -1,0 +1,221 @@
+{
+  "molecule_name": "allopurinol",
+  "smiles": "C1=NNC2=C1C(=O)NC=N2",
+  "molecular_weight": 136.11,
+  "logp": -0.35,
+  "num_h_donors": 2,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "-15297414691/6135824906",
+        "-3854344796/7452609077",
+        "-958172125/2416307222"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "cation_N2",
+      "kind": "Cationic",
+      "coord": [
+        "-10617836821/6754816101",
+        "-3913401319/2663560692",
+        "-2702912361/9694428214"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 2
+    },
+    {
+      "id": "cation_N7",
+      "kind": "Cationic",
+      "coord": [
+        "16919675341/9498731064",
+        "5441184492/7830505307",
+        "1756494692/6025361531"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 7
+    },
+    {
+      "id": "cation_N9",
+      "kind": "Cationic",
+      "coord": [
+        "2233313471/2743943426",
+        "-10640167775/7224746263",
+        "789012490/8955604107"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 9
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-2014275413/1464403091",
+        "-2426677985/7147889192",
+        "-2147751171/9756049687"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "3836554713/5562198662",
+        "-645921559/6914606210",
+        "801828701/7728472223"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        5,
+        7,
+        8,
+        9,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-2684434007/4980420033",
+        "3892304850/8249877731",
+        "-287128485/4042062553"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "cation_N2",
+      "distance": 1.330020455405858
+    },
+    {
+      "from": "cation_N1",
+      "to": "cation_N7",
+      "distance": 4.495873831379846
+    },
+    {
+      "from": "cation_N1",
+      "to": "cation_N9",
+      "distance": 3.4762726308284013
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring0",
+      "distance": 1.145340121540189
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring1",
+      "distance": 3.2497130966697036
+    },
+    {
+      "from": "cation_N1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.2141993923750545
+    },
+    {
+      "from": "cation_N2",
+      "to": "cation_N7",
+      "distance": 4.031405732856886
+    },
+    {
+      "from": "cation_N2",
+      "to": "cation_N9",
+      "distance": 2.4138494624135802
+    },
+    {
+      "from": "cation_N2",
+      "to": "aromatic_ring0",
+      "distance": 1.148185055460477
+    },
+    {
+      "from": "cation_N2",
+      "to": "aromatic_ring1",
+      "distance": 2.6747495793818197
+    },
+    {
+      "from": "cation_N2",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.208544781981509
+    },
+    {
+      "from": "cation_N7",
+      "to": "cation_N9",
+      "distance": 2.3823672861954486
+    },
+    {
+      "from": "cation_N7",
+      "to": "aromatic_ring0",
+      "distance": 3.3610674780780405
+    },
+    {
+      "from": "cation_N7",
+      "to": "aromatic_ring1",
+      "distance": 1.359420312560331
+    },
+    {
+      "from": "cation_N7",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.358978960981547
+    },
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring0",
+      "distance": 2.484497106151824
+    },
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring1",
+      "distance": 1.384989711792822
+    },
+    {
+      "from": "cation_N9",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.37421843857539
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 2.104925619912223
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.1748025274369467
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.363763691057725
+    }
+  ],
+  "feature_counts": {
+    "cationic": 4,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 7
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

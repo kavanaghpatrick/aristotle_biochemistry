@@ -1,0 +1,134 @@
+{
+  "molecule_name": "terfenadine",
+  "smiles": "CC(C)(C)C(O)CCCN1CCC(CC1)C(O)(C2=CC=CC=C2)C3=CC=CC=C3",
+  "molecular_weight": 395.59,
+  "logp": 4.82,
+  "num_h_donors": 2,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N9",
+      "kind": "Cationic",
+      "coord": [
+        "-4686950477/8870582197",
+        "2550846209/9470331103",
+        "6735502373/8513279432"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 9
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "44651280372/9923017435",
+        "-18511254332/8208459535",
+        "-14129075994/8934721243"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        17
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "30293050467/6375329188",
+        "9905510137/7688959641",
+        "6081125361/3507164336"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        23
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "6354032669/4492527553",
+        "-2195353505/9691666092",
+        "-385669116/4095462653"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        11,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring0",
+      "distance": 6.106079991623296
+    },
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring1",
+      "distance": 5.459405752727459
+    },
+    {
+      "from": "cation_N9",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.1917822792885753
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 4.859048151886771
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.980809133302296
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.095575714496578
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

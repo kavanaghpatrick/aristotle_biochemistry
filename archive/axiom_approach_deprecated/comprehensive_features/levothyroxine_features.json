@@ -1,0 +1,127 @@
+{
+  "molecule_name": "levothyroxine",
+  "smiles": "C1=C(C=C(C(=C1I)OC2=CC(=C(C(=C2)I)O)I)I)CC(C(=O)O)N",
+  "molecular_weight": 776.87,
+  "logp": 4.56,
+  "num_h_donors": 3,
+  "num_h_acceptors": 5,
+  "features": [
+    {
+      "id": "cation_N23",
+      "kind": "Cationic",
+      "coord": [
+        "46158812877/8300851097",
+        "9266596411/7699327104",
+        "-8748603746/7655479265"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 23
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "3267209371/4946747061",
+        "2562967682/7306373989",
+        "720928059/9996359617"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "-37265210673/8735348177",
+        "-1464263307/3932376083",
+        "2266301787/7300057217"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        8
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-7531348851/4661378804",
+        "132858666/3111172003",
+        "489414107/8522866245"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N23",
+      "to": "aromatic_ring0",
+      "distance": 5.120130678924078
+    },
+    {
+      "from": "cation_N23",
+      "to": "aromatic_ring1",
+      "distance": 10.057861958770872
+    },
+    {
+      "from": "cation_N23",
+      "to": "hydrophobe_cluster0",
+      "distance": 7.368117545070048
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 4.984992866853504
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.2969695061640008
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.694544157173609
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

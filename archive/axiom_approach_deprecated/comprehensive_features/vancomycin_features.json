@@ -1,0 +1,159 @@
+{
+  "molecule_name": "vancomycin",
+  "smiles": "CN1C2=C(C=CC(=C2)O)C(=O)C3=C1C=CC=C3O",
+  "molecular_weight": 241.25,
+  "logp": 2.1,
+  "num_h_donors": 2,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "318972873/6375045151",
+        "4764096219/5093887946",
+        "-2369980809/3511626299"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-783766054/4843541249",
+        "-709999247/7480793054",
+        "1998642422/8266292999"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        1,
+        12,
+        11,
+        9,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "10353204719/4680092792",
+        "-5830913279/9370568095",
+        "271570829/1372740681"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4,
+        5,
+        6,
+        7,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring2",
+      "kind": "Aromatic",
+      "coord": [
+        "-15915649150/6190032143",
+        "565738525/2099368338",
+        "741785733/8164079164"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        13,
+        14,
+        15,
+        16,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-3333884065/9904005646",
+        "-1538593170/7428089827",
+        "1465700328/7120279397"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        5,
+        7,
+        11,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring0",
+      "distance": 1.3951426501503357
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring1",
+      "distance": 2.80399297895948
+    },
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring2",
+      "distance": 2.8107604202846836
+    },
+    {
+      "from": "cation_N1",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.4934071264861561
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 2.4322594006901372
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring2",
+      "distance": 2.4414257372956354
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.21081061779602617
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "aromatic_ring2",
+      "distance": 4.866940436752345
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.5823964316018504
+    },
+    {
+      "from": "aromatic_ring2",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.287709287856107
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 3,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

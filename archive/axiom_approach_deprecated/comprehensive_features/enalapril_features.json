@@ -1,0 +1,118 @@
+{
+  "molecule_name": "enalapril",
+  "smiles": "CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2CCCC2C(=O)O",
+  "molecular_weight": 376.45,
+  "logp": 1.6,
+  "num_h_donors": 2,
+  "num_h_acceptors": 6,
+  "features": [
+    {
+      "id": "cation_N14",
+      "kind": "Cationic",
+      "coord": [
+        "537552049/6395466265",
+        "4662245033/8389822107",
+        "-9820422166/6389709075"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 14
+    },
+    {
+      "id": "cation_N19",
+      "kind": "Cationic",
+      "coord": [
+        "28504911593/8007477669",
+        "-636107127/2658372815",
+        "-543362079/3254000372"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 19
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-42229910652/9043708849",
+        "-23861101891/7549008371",
+        "-961636257/3889921016"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        8
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-5510201809/3078143081",
+        "-6199498639/5152295362",
+        "-1265061155/7907353918"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        21,
+        22
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N14",
+      "to": "cation_N19",
+      "distance": 3.819612732515129
+    },
+    {
+      "from": "cation_N14",
+      "to": "aromatic_ring0",
+      "distance": 6.170291342523995
+    },
+    {
+      "from": "cation_N14",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.915871840225696
+    },
+    {
+      "from": "cation_N19",
+      "to": "aromatic_ring0",
+      "distance": 8.732901462101701
+    },
+    {
+      "from": "cation_N19",
+      "to": "hydrophobe_cluster0",
+      "distance": 5.43604884120856
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.48293304227715
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

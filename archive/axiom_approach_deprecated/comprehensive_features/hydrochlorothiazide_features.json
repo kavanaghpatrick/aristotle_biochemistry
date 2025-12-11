@@ -1,0 +1,144 @@
+{
+  "molecule_name": "hydrochlorothiazide",
+  "smiles": "C1=C2C(=CC=C1S(=O)(=O)N)S(=O)(=O)NCN2",
+  "molecular_weight": 263.3,
+  "logp": -1.0,
+  "num_h_donors": 3,
+  "num_h_acceptors": 5,
+  "features": [
+    {
+      "id": "cation_N9",
+      "kind": "Cationic",
+      "coord": [
+        "40915660461/9956410441",
+        "-3072644287/8158218440",
+        "9155205443/7797495529"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 9
+    },
+    {
+      "id": "cation_N13",
+      "kind": "Cationic",
+      "coord": [
+        "-5521126789/1571448080",
+        "396331472/5361501795",
+        "4774993969/7579319276"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 13
+    },
+    {
+      "id": "cation_N15",
+      "kind": "Cationic",
+      "coord": [
+        "-13419301449/8714464240",
+        "833089457/576540489",
+        "731516488/961750967"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 15
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "3393515461/9655822560",
+        "-302858474/889240791",
+        "-682140866/1753467719"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "2455109344/5033307787",
+        "-2627355963/5582978092",
+        "-3869485294/8446943835"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N9",
+      "to": "cation_N13",
+      "distance": 7.655544356835373
+    },
+    {
+      "from": "cation_N9",
+      "to": "cation_N15",
+      "distance": 5.950177598115472
+    },
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring0",
+      "distance": 4.070322265211301
+    },
+    {
+      "from": "cation_N9",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.9736270279828587
+    },
+    {
+      "from": "cation_N13",
+      "to": "cation_N15",
+      "distance": 2.4065763803035543
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring0",
+      "distance": 4.018367899560959
+    },
+    {
+      "from": "cation_N13",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.182086239585365
+    },
+    {
+      "from": "cation_N15",
+      "to": "aromatic_ring0",
+      "distance": 2.8437712818139653
+    },
+    {
+      "from": "cation_N15",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.0440259594559467
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.2006496478290901
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

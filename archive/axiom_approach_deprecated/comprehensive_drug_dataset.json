@@ -1,0 +1,497 @@
+{
+  "description": "Comprehensive drug dataset for hERG coverage analysis",
+  "version": "1.0",
+  "date": "2025-12-11",
+  "sources": ["FDA Orange Book", "ChEMBL", "DrugBank", "Literature"],
+  "total_molecules": 50,
+  "categories": {
+    "cardiovascular": 10,
+    "cns": 10,
+    "metabolic": 10,
+    "antibiotic": 10,
+    "withdrawn": 5,
+    "otc": 5
+  },
+  "molecules": [
+    {
+      "name": "metformin",
+      "category": "metabolic",
+      "class": "antidiabetic",
+      "smiles": "CN(C)C(=N)NC(=N)N",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No aromatic rings"
+    },
+    {
+      "name": "aspirin",
+      "category": "otc",
+      "class": "nsaid",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen"
+    },
+    {
+      "name": "acetaminophen",
+      "category": "otc",
+      "class": "analgesic",
+      "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "Amide nitrogen (not basic)"
+    },
+    {
+      "name": "ibuprofen",
+      "category": "otc",
+      "class": "nsaid",
+      "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen"
+    },
+    {
+      "name": "naproxen",
+      "category": "otc",
+      "class": "nsaid",
+      "smiles": "COC1=CC2=C(C=C1)C=C(C=C2)C(C)C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen"
+    },
+    {
+      "name": "penicillin",
+      "category": "antibiotic",
+      "class": "beta-lactam",
+      "smiles": "CC1(C)SC2C(NC(=O)CC3=CC=CC=C3)C(=O)N2C1C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen (amide only)"
+    },
+    {
+      "name": "amoxicillin",
+      "category": "antibiotic",
+      "class": "beta-lactam",
+      "smiles": "CC1(C)SC2C(NC(=O)C(N)C3=CC=C(O)C=C3)C(=O)N2C1C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has amine (borderline)"
+    },
+    {
+      "name": "ciprofloxacin",
+      "category": "antibiotic",
+      "class": "fluoroquinolone",
+      "smiles": "C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "levofloxacin",
+      "category": "antibiotic",
+      "class": "fluoroquinolone",
+      "smiles": "CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "azithromycin",
+      "category": "antibiotic",
+      "class": "macrolide",
+      "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "vancomycin",
+      "category": "antibiotic",
+      "class": "glycopeptide",
+      "smiles": "CN1C2=C(C=CC(=C2)O)C(=O)C3=C1C=CC=C3O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Large, complex (has features but too big)"
+    },
+    {
+      "name": "tetracycline",
+      "category": "antibiotic",
+      "class": "tetracycline",
+      "smiles": "CN(C)C1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)O)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "doxycycline",
+      "category": "antibiotic",
+      "class": "tetracycline",
+      "smiles": "CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "erythromycin",
+      "category": "antibiotic",
+      "class": "macrolide",
+      "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "furosemide",
+      "category": "cardiovascular",
+      "class": "diuretic",
+      "smiles": "C1=CC(=C(C=C1Cl)S(=O)(=O)N)C(=O)NCC2=CC=CO2",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "Sulfonamide (not basic)"
+    },
+    {
+      "name": "hydrochlorothiazide",
+      "category": "cardiovascular",
+      "class": "diuretic",
+      "smiles": "C1=C2C(=CC=C1S(=O)(=O)N)S(=O)(=O)NCN2",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "Sulfonamide (not basic)"
+    },
+    {
+      "name": "lisinopril",
+      "category": "cardiovascular",
+      "class": "ace_inhibitor",
+      "smiles": "C1CC(C(=O)N1C(CCC2=CC=CC=C2)C(=O)O)CCCCN",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has amine + aromatic"
+    },
+    {
+      "name": "enalapril",
+      "category": "cardiovascular",
+      "class": "ace_inhibitor",
+      "smiles": "CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2CCCC2C(=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has amine + aromatic"
+    },
+    {
+      "name": "atenolol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "propranolol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "smiles": "CC(C)NCC(COC1=C2C=CC=CC2=CC=C1)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "metoprolol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "smiles": "CCOC1=CC=C(C=C1)CCOC(C)CNC(C)C",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "carvedilol",
+      "category": "cardiovascular",
+      "class": "beta_blocker",
+      "smiles": "COC1=C(C=CC(=C1)CNCCC(COC2=CC=CC3=C2C4=CC=CC=C4N3)O)OC",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "amlodipine",
+      "category": "cardiovascular",
+      "class": "calcium_blocker",
+      "smiles": "CCOC(=O)C1=C(NC(=C(C1C2=CC=CC=C2Cl)C(=O)OC)C)COCCN",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "warfarin",
+      "category": "cardiovascular",
+      "class": "anticoagulant",
+      "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen"
+    },
+    {
+      "name": "clopidogrel",
+      "category": "cardiovascular",
+      "class": "antiplatelet",
+      "smiles": "COC(=O)C(C1=CC=CC=C1Cl)N2CC=C(C2)C3=CC=CS3",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "sertraline",
+      "category": "cns",
+      "class": "ssri",
+      "smiles": "CNC1CCC(C2=CC=C(C=C12)Cl)C3=CC(=C(C=C3)Cl)Cl",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "fluoxetine",
+      "category": "cns",
+      "class": "ssri",
+      "smiles": "CNCCC(C1=CC=C(C=C1)OC(F)(F)F)C2=CC=CC=C2",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "citalopram",
+      "category": "cns",
+      "class": "ssri",
+      "smiles": "CN(C)CCCC1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "paroxetine",
+      "category": "cns",
+      "class": "ssri",
+      "smiles": "C1C2C(COC2)OC3=C1C=C(C=C3)OCCCNC4=CC=C(C=C4)F",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "venlafaxine",
+      "category": "cns",
+      "class": "snri",
+      "smiles": "COC1=CC=C(C=C1)C(CN(C)C)C2(CCCCC2)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "duloxetine",
+      "category": "cns",
+      "class": "snri",
+      "smiles": "CNCCC(C1=CC=CS1)OC2=CC=C3C(=C2)CCOC3",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "lorazepam",
+      "category": "cns",
+      "class": "benzodiazepine",
+      "smiles": "C1C(=O)NC2=C(C=C(C=C2Cl)Cl)C(=N1)C3=CC=CC=C3O",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen (all amide/imine)"
+    },
+    {
+      "name": "diazepam",
+      "category": "cns",
+      "class": "benzodiazepine",
+      "smiles": "CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen (all amide)"
+    },
+    {
+      "name": "alprazolam",
+      "category": "cns",
+      "class": "benzodiazepine",
+      "smiles": "CC1=NN=C2CN=C(C3=C2C(=CC(=C3)Cl)C1)C4=CC=CC=C4",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen (all imine)"
+    },
+    {
+      "name": "morphine",
+      "category": "cns",
+      "class": "opioid",
+      "smiles": "CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "codeine",
+      "category": "cns",
+      "class": "opioid",
+      "smiles": "COC1=C2C3CC4C(C3CC2=CC=C1)NC5C4C(=O)CCC5O",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "insulin_glargine",
+      "category": "metabolic",
+      "class": "insulin",
+      "smiles": "PEPTIDE",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "Protein (no small molecule pharmacophore)"
+    },
+    {
+      "name": "sitagliptin",
+      "category": "metabolic",
+      "class": "dpp4_inhibitor",
+      "smiles": "C1CC2=C(C=CC(=C2)F)C(C1N)CN3CCN(CC3)C(=O)C4=NC(=C(C=N4)N)C(F)(F)F",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "glipizide",
+      "category": "metabolic",
+      "class": "sulfonylurea",
+      "smiles": "CC1=CC=C(C=C1)C(=O)NCCCCCNC(=O)NS(=O)(=O)C2=CC=C(C=C2)C",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "pioglitazone",
+      "category": "metabolic",
+      "class": "glitazone",
+      "smiles": "CCC1=CC=C(C=C1)CCOC2=CC=C(C=C2)CC(=O)NC3CCCCN3C",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore"
+    },
+    {
+      "name": "levothyroxine",
+      "category": "metabolic",
+      "class": "thyroid",
+      "smiles": "C1=C(C=C(C(=C1I)OC2=CC(=C(C(=C2)I)O)I)I)CC(C(=O)O)N",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": false,
+      "reason": "Has amine + aromatic"
+    },
+    {
+      "name": "allopurinol",
+      "category": "metabolic",
+      "class": "xanthine_oxidase_inhibitor",
+      "smiles": "C1=NNC2=C1C(=O)NC=N2",
+      "fda_status": "approved",
+      "herg_known": "non_binder",
+      "expected_certifiable": true,
+      "reason": "No basic nitrogen (all in rings)"
+    },
+    {
+      "name": "colchicine",
+      "category": "metabolic",
+      "class": "gout",
+      "smiles": "COC1=C(C(=CC2=C1C(=O)CC(C2)(NC(=O)C)CC3=CC=C(C=C3)OC)OC)OC",
+      "fda_status": "approved",
+      "herg_known": "weak_binder",
+      "expected_certifiable": true,
+      "reason": "Amide nitrogen (not basic)"
+    },
+    {
+      "name": "terfenadine",
+      "category": "withdrawn",
+      "class": "antihistamine",
+      "smiles": "CC(C)(C)C(O)CCCN1CCC(CC1)C(O)(C2=CC=CC=C2)C3=CC=CC=C3",
+      "fda_status": "withdrawn_1997",
+      "herg_known": "strong_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore (KNOWN BINDER)"
+    },
+    {
+      "name": "cisapride",
+      "category": "withdrawn",
+      "class": "prokinetic",
+      "smiles": "COC1=CC=C(C=C1)CCNC(=O)C2CCN(CC2)CC(=O)NC3=CC(=C(C=C3)OC)Cl",
+      "fda_status": "withdrawn_2000",
+      "herg_known": "strong_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore (KNOWN BINDER)"
+    },
+    {
+      "name": "astemizole",
+      "category": "withdrawn",
+      "class": "antihistamine",
+      "smiles": "COC1=CC=C(C=C1)CCN2CCC(CC2)NC(=O)C3=CC=C(C=C3)F",
+      "fda_status": "withdrawn_1999",
+      "herg_known": "strong_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore (KNOWN BINDER)"
+    },
+    {
+      "name": "grepafloxacin",
+      "category": "withdrawn",
+      "class": "fluoroquinolone",
+      "smiles": "CN1CCN(CC1)C2=C(C=C3C(=C2F)N(C=C(C3=O)C(=O)O)C4CC4)F",
+      "fda_status": "withdrawn_1999",
+      "herg_known": "strong_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore (KNOWN BINDER)"
+    },
+    {
+      "name": "terodiline",
+      "category": "withdrawn",
+      "class": "anticholinergic",
+      "smiles": "CC(C)N(C(C)C)CCOC(C1=CC=CC=C1)C2=CC=CC=C2",
+      "fda_status": "withdrawn_1991",
+      "herg_known": "strong_binder",
+      "expected_certifiable": false,
+      "reason": "Has pharmacophore (KNOWN BINDER)"
+    }
+  ]
+}

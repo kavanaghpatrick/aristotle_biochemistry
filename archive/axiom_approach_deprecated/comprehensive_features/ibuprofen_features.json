@@ -1,0 +1,71 @@
+{
+  "molecule_name": "ibuprofen",
+  "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+  "molecular_weight": 206.29,
+  "logp": 3.07,
+  "num_h_donors": 1,
+  "num_h_acceptors": 2,
+  "features": [
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-3479044742/7087715225",
+        "761516633/6187079697",
+        "1982110680/4912444211"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4,
+        9,
+        8,
+        7,
+        6,
+        5
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "2540088955/9190919219",
+        "-149306231/3565846569",
+        "257451309/9368311214"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.8701865660205028
+    }
+  ],
+  "feature_counts": {
+    "cationic": 0,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 2
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

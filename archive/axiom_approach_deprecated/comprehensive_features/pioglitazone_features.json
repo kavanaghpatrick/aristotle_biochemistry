@@ -1,0 +1,162 @@
+{
+  "molecule_name": "pioglitazone",
+  "smiles": "CCC1=CC=C(C=C1)CCOC2=CC=C(C=C2)CC(=O)NC3CCCCN3C",
+  "molecular_weight": 380.53,
+  "logp": 3.97,
+  "num_h_donors": 1,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N20",
+      "kind": "Cationic",
+      "coord": [
+        "-35649623136/7666932473",
+        "-2182152191/8135091650",
+        "-3673064032/9676974147"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 20
+    },
+    {
+      "id": "cation_N26",
+      "kind": "Cationic",
+      "coord": [
+        "-64769656173/9604203286",
+        "4503930853/9938839378",
+        "-13126900901/9366080905"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 26
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "19072775107/2999379383",
+        "609089931/3758746529",
+        "2555794904/2680116889"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "1761847955/8036588044",
+        "1316652386/8312612429",
+        "-63515089/1602244079"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        11
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "4835637350/2422233319",
+        "-698868767/8091782057",
+        "3916891361/9708095602"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        22,
+        23,
+        24
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N20",
+      "to": "cation_N26",
+      "distance": 2.4392796696969934
+    },
+    {
+      "from": "cation_N20",
+      "to": "aromatic_ring0",
+      "distance": 11.097473667153137
+    },
+    {
+      "from": "cation_N20",
+      "to": "aromatic_ring1",
+      "distance": 4.899479600969356
+    },
+    {
+      "from": "cation_N20",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.694584121146937
+    },
+    {
+      "from": "cation_N26",
+      "to": "aromatic_ring0",
+      "distance": 13.315955804659229
+    },
+    {
+      "from": "cation_N26",
+      "to": "aromatic_ring1",
+      "distance": 7.10117002619153
+    },
+    {
+      "from": "cation_N26",
+      "to": "hydrophobe_cluster0",
+      "distance": 8.94097020116987
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 6.219503526897375
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.404115490832548
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.847817819450867
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

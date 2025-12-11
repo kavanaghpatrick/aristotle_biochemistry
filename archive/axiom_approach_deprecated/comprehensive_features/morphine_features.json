@@ -1,0 +1,89 @@
+{
+  "molecule_name": "morphine",
+  "smiles": "CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O",
+  "molecular_weight": 301.34,
+  "logp": 0.75,
+  "num_h_donors": 2,
+  "num_h_acceptors": 5,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "15440852638/7419084645",
+        "9750305268/7929892759",
+        "1960473711/2863332527"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-6382325677/3302989071",
+        "10475368171/7868008252",
+        "-7354999692/9528953447"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        16,
+        17,
+        18,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-5243774829/9556349800",
+        "2645852242/8266984855",
+        "-2668831169/4786235673"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        4,
+        8,
+        9,
+        12,
+        13,
+        14,
+        17,
+        18
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "aromatic_ring0",
+      "distance": 4.270859154027746
+    },
+    {
+      "from": "cation_N1",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.047484232738296
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.727125557627771
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 3
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

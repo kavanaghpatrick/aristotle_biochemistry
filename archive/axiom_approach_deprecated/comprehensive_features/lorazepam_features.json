@@ -1,0 +1,156 @@
+{
+  "molecule_name": "lorazepam",
+  "smiles": "C1C(=O)NC2=C(C=C(C=C2Cl)Cl)C(=N1)C3=CC=CC=C3O",
+  "molecular_weight": 321.16,
+  "logp": 3.49,
+  "num_h_donors": 2,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N3",
+      "kind": "Cationic",
+      "coord": [
+        "-20144528314/7957261819",
+        "10633563374/8163875213",
+        "2472590502/3366129643"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 3
+    },
+    {
+      "id": "cation_N13",
+      "kind": "Cationic",
+      "coord": [
+        "-139318097/7763538436",
+        "13167223897/7211769310",
+        "-5902263762/7478357009"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 13
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-6519319133/3425958569",
+        "-4554747046/3312034339",
+        "-23404528/838272093"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        6,
+        7,
+        8,
+        9,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "1594941597/559383776",
+        "-359572395/5367885461",
+        "51696087/93704986"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        14
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-103719025/1525032464",
+        "-10233332218/8677859427",
+        "128224257/402477827"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N3",
+      "to": "cation_N13",
+      "distance": 2.985664345886689
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring0",
+      "distance": 2.854260505836077
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring1",
+      "distance": 5.557329673186549
+    },
+    {
+      "from": "cation_N3",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.521559769858869
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring0",
+      "distance": 3.791990574841839
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring1",
+      "distance": 3.6895800747888114
+    },
+    {
+      "from": "cation_N13",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.2031364048341486
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 4.9648256265292465
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.8775926289234377
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.1326554544431913
+    }
+  ],
+  "feature_counts": {
+    "cationic": 2,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

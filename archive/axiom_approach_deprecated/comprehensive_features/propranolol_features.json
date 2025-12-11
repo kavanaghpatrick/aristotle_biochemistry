@@ -1,0 +1,124 @@
+{
+  "molecule_name": "propranolol",
+  "smiles": "CC(C)NCC(COC1=C2C=CC=CC2=CC=C1)O",
+  "molecular_weight": 259.35,
+  "logp": 2.58,
+  "num_h_donors": 2,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N3",
+      "kind": "Cationic",
+      "coord": [
+        "3806103576/999518225",
+        "-7223202859/8590491413",
+        "-3114375759/5989211996"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 3
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-17322115667/5352619745",
+        "-84089513/9989786219",
+        "5429951114/8488810283"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        8,
+        17,
+        16,
+        15,
+        14,
+        9
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "-5635959323/1456264446",
+        "11454412073/6198619597",
+        "-6503538289/8107278700"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        9
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-18199452421/7953021779",
+        "647712519/751701341",
+        "810200699/4862164311"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        2,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring0",
+      "distance": 7.187316921614094
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring1",
+      "distance": 8.140143272795152
+    },
+    {
+      "from": "cation_N3",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.366704985642837
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 2.4344854861657117
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.3708258120809873
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.100784127361982
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

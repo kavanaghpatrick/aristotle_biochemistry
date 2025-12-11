@@ -1,0 +1,332 @@
+{
+  "molecule_name": "sitagliptin",
+  "smiles": "C1CC2=C(C=CC(=C2)F)C(C1N)CN3CCN(CC3)C(=O)C4=NC(=C(C=N4)N)C(F)(F)F",
+  "molecular_weight": 452.46,
+  "logp": 2.03,
+  "num_h_donors": 2,
+  "num_h_acceptors": 6,
+  "features": [
+    {
+      "id": "cation_N11",
+      "kind": "Cationic",
+      "coord": [
+        "-5099216144/6912749191",
+        "-11016375798/8192915017",
+        "-10413973847/9621355740"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 11
+    },
+    {
+      "id": "cation_N13",
+      "kind": "Cationic",
+      "coord": [
+        "-5937662363/9646025543",
+        "244676519/174895203",
+        "5175988299/8884878692"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 13
+    },
+    {
+      "id": "cation_N16",
+      "kind": "Cationic",
+      "coord": [
+        "9907151461/4861184464",
+        "5682502068/3222069293",
+        "4991835624/6337743431"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 16
+    },
+    {
+      "id": "cation_N22",
+      "kind": "Cationic",
+      "coord": [
+        "34758645357/6417650381",
+        "1892865879/7068262057",
+        "1031065943/9550019912"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 22
+    },
+    {
+      "id": "cation_N26",
+      "kind": "Cationic",
+      "coord": [
+        "23718950006/7196748417",
+        "-5221021634/8444025747",
+        "-3709261321/9869195772"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 26
+    },
+    {
+      "id": "cation_N27",
+      "kind": "Cationic",
+      "coord": [
+        "50161783375/8634216423",
+        "-30682421737/9579636972",
+        "-3584320345/3050156746"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 27
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-36797222309/6760963368",
+        "-436081813/1314670596",
+        "2138190195/4251547253"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4,
+        5,
+        6,
+        7,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "28741212776/6181273037",
+        "-1143287248/1501239725",
+        "-2778014049/8281305319"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        21
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-3385591363/2483843413",
+        "-2711239733/4512828934",
+        "-480733104/6724015177"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        28,
+        29,
+        30,
+        31
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N11",
+      "to": "cation_N13",
+      "distance": 3.211595612080696
+    },
+    {
+      "from": "cation_N11",
+      "to": "cation_N16",
+      "distance": 4.5675427873187875
+    },
+    {
+      "from": "cation_N11",
+      "to": "cation_N22",
+      "distance": 6.4719028357518615
+    },
+    {
+      "from": "cation_N11",
+      "to": "cation_N26",
+      "distance": 4.158770562972229
+    },
+    {
+      "from": "cation_N11",
+      "to": "cation_N27",
+      "distance": 6.806535183655507
+    },
+    {
+      "from": "cation_N11",
+      "to": "aromatic_ring0",
+      "distance": 5.067120140020111
+    },
+    {
+      "from": "cation_N11",
+      "to": "aromatic_ring1",
+      "distance": 5.470072671225182
+    },
+    {
+      "from": "cation_N11",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.4022479694316285
+    },
+    {
+      "from": "cation_N13",
+      "to": "cation_N16",
+      "distance": 2.6863411794081373
+    },
+    {
+      "from": "cation_N13",
+      "to": "cation_N22",
+      "distance": 6.155137616588273
+    },
+    {
+      "from": "cation_N13",
+      "to": "cation_N26",
+      "distance": 4.504068316101829
+    },
+    {
+      "from": "cation_N13",
+      "to": "cation_N27",
+      "distance": 8.096291630627599
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring0",
+      "distance": 5.128548291237973
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring1",
+      "distance": 5.764885385142607
+    },
+    {
+      "from": "cation_N13",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.2328520727606214
+    },
+    {
+      "from": "cation_N16",
+      "to": "cation_N22",
+      "distance": 3.756450793468388
+    },
+    {
+      "from": "cation_N16",
+      "to": "cation_N26",
+      "distance": 2.9341545946060528
+    },
+    {
+      "from": "cation_N16",
+      "to": "cation_N27",
+      "distance": 6.537874528673675
+    },
+    {
+      "from": "cation_N16",
+      "to": "aromatic_ring0",
+      "distance": 7.773737966725744
+    },
+    {
+      "from": "cation_N16",
+      "to": "aromatic_ring1",
+      "distance": 3.8024879231450317
+    },
+    {
+      "from": "cation_N16",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.230331169664958
+    },
+    {
+      "from": "cation_N22",
+      "to": "cation_N26",
+      "distance": 2.3484013516795894
+    },
+    {
+      "from": "cation_N22",
+      "to": "cation_N27",
+      "distance": 3.7211296243341745
+    },
+    {
+      "from": "cation_N22",
+      "to": "aromatic_ring0",
+      "distance": 10.88240779050162
+    },
+    {
+      "from": "cation_N22",
+      "to": "aromatic_ring1",
+      "distance": 1.3577697229730512
+    },
+    {
+      "from": "cation_N22",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.836919904887124
+    },
+    {
+      "from": "cation_N26",
+      "to": "cation_N27",
+      "distance": 3.693016164148081
+    },
+    {
+      "from": "cation_N26",
+      "to": "aromatic_ring0",
+      "distance": 8.787137320202117
+    },
+    {
+      "from": "cation_N26",
+      "to": "aromatic_ring1",
+      "distance": 1.3620929977804341
+    },
+    {
+      "from": "cation_N26",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.668795778442498
+    },
+    {
+      "from": "cation_N27",
+      "to": "aromatic_ring0",
+      "distance": 11.73339889855377
+    },
+    {
+      "from": "cation_N27",
+      "to": "aromatic_ring1",
+      "distance": 2.8302840057815315
+    },
+    {
+      "from": "cation_N27",
+      "to": "hydrophobe_cluster0",
+      "distance": 7.709505228054253
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 10.13620556470641
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.128574437850626
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.020707528568233
+    }
+  ],
+  "feature_counts": {
+    "cationic": 6,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 9
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

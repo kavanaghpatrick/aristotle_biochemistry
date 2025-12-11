@@ -1,0 +1,129 @@
+{
+  "molecule_name": "metformin",
+  "smiles": "CN(C)C(=N)NC(=N)N",
+  "molecular_weight": 129.17,
+  "logp": -1.03,
+  "num_h_donors": 4,
+  "num_h_acceptors": 2,
+  "features": [
+    {
+      "id": "cation_N1",
+      "kind": "Cationic",
+      "coord": [
+        "-12733191854/9591608635",
+        "3693576609/9592378690",
+        "-1983657639/3405619364"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 1
+    },
+    {
+      "id": "cation_N4",
+      "kind": "Cationic",
+      "coord": [
+        "-2246818365/7424777047",
+        "1358272903/1136607180",
+        "12452638837/8908540691"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 4
+    },
+    {
+      "id": "cation_N5",
+      "kind": "Cationic",
+      "coord": [
+        "6087245749/8728086398",
+        "-5635676381/7951768686",
+        "3896513519/9841242272"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 5
+    },
+    {
+      "id": "cation_N7",
+      "kind": "Cationic",
+      "coord": [
+        "26102635089/9874987367",
+        "5951171221/9367635231",
+        "5082079327/7327404003"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 7
+    },
+    {
+      "id": "cation_N8",
+      "kind": "Cationic",
+      "coord": [
+        "16546440821/5827033485",
+        "-15067807198/9119384479",
+        "7232061745/6037323294"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 8
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N1",
+      "to": "cation_N4",
+      "distance": 2.372361602535096
+    },
+    {
+      "from": "cation_N1",
+      "to": "cation_N5",
+      "distance": 2.500825668111886
+    },
+    {
+      "from": "cation_N1",
+      "to": "cation_N7",
+      "distance": 4.17833495392891
+    },
+    {
+      "from": "cation_N1",
+      "to": "cation_N8",
+      "distance": 4.968442502968303
+    },
+    {
+      "from": "cation_N4",
+      "to": "cation_N5",
+      "distance": 2.3723757150004756
+    },
+    {
+      "from": "cation_N4",
+      "to": "cation_N7",
+      "distance": 3.0802147213485513
+    },
+    {
+      "from": "cation_N4",
+      "to": "cation_N8",
+      "distance": 4.2450701644369895
+    },
+    {
+      "from": "cation_N5",
+      "to": "cation_N7",
+      "distance": 2.383572736576773
+    },
+    {
+      "from": "cation_N5",
+      "to": "cation_N8",
+      "distance": 2.4743285389881975
+    },
+    {
+      "from": "cation_N7",
+      "to": "cation_N8",
+      "distance": 2.350715696927258
+    }
+  ],
+  "feature_counts": {
+    "cationic": 5,
+    "aromatic": 0,
+    "hydrophobic": 0,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

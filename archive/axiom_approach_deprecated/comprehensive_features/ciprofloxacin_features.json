@@ -1,0 +1,188 @@
+{
+  "molecule_name": "ciprofloxacin",
+  "smiles": "C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O",
+  "molecular_weight": 331.35,
+  "logp": 1.58,
+  "num_h_donors": 2,
+  "num_h_acceptors": 6,
+  "features": [
+    {
+      "id": "cation_N3",
+      "kind": "Cationic",
+      "coord": [
+        "-16275782553/7018593455",
+        "-2930289837/9420281401",
+        "961065965/1911284328"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 3
+    },
+    {
+      "id": "cation_N14",
+      "kind": "Cationic",
+      "coord": [
+        "20349012883/8050076910",
+        "6881697/1000000000",
+        "-496855339/3419120643"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 14
+    },
+    {
+      "id": "cation_N17",
+      "kind": "Cationic",
+      "coord": [
+        "14914283159/2847604053",
+        "-1555173643/8735379980",
+        "437486433/8779307129"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 17
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-14257983825/5748628117",
+        "8737799787/9041614687",
+        "-64518505/2899876009"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        4,
+        5,
+        6,
+        8,
+        13,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "-193890095/2366159332",
+        "5925228494/5323488071",
+        "-1503587224/3771793565"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        8
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-4797559917/5397805390",
+        "3350118392/6122857333",
+        "-2791281472/7719238845"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        5,
+        8,
+        9,
+        10,
+        12,
+        20
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N3",
+      "to": "cation_N14",
+      "distance": 4.900227875304314
+    },
+    {
+      "from": "cation_N3",
+      "to": "cation_N17",
+      "distance": 7.571172470278219
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring0",
+      "distance": 1.3905516645109204
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring1",
+      "distance": 2.8008791230782206
+    },
+    {
+      "from": "cation_N3",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.87859540335143
+    },
+    {
+      "from": "cation_N14",
+      "to": "cation_N17",
+      "distance": 2.722985259402302
+    },
+    {
+      "from": "cation_N14",
+      "to": "aromatic_ring0",
+      "distance": 5.100620435655246
+    },
+    {
+      "from": "cation_N14",
+      "to": "aromatic_ring1",
+      "distance": 2.8457906620673814
+    },
+    {
+      "from": "cation_N14",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.465809533317352
+    },
+    {
+      "from": "cation_N17",
+      "to": "aromatic_ring0",
+      "distance": 7.802448944475631
+    },
+    {
+      "from": "cation_N17",
+      "to": "aromatic_ring1",
+      "distance": 5.492202836817157
+    },
+    {
+      "from": "cation_N17",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.182758998669907
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 2.4320786811700934
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.680362931109816
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 0.986211804714968
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 6
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

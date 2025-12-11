@@ -1,0 +1,146 @@
+{
+  "molecule_name": "amoxicillin",
+  "smiles": "CC1(C)SC2C(NC(=O)C(N)C3=CC=C(O)C=C3)C(=O)N2C1C(=O)O",
+  "molecular_weight": 365.41,
+  "logp": 0.02,
+  "num_h_donors": 4,
+  "num_h_acceptors": 7,
+  "features": [
+    {
+      "id": "cation_N6",
+      "kind": "Cationic",
+      "coord": [
+        "-2815373031/4732050722",
+        "-6819666067/4644778229",
+        "738918733/1708202540"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 6
+    },
+    {
+      "id": "cation_N10",
+      "kind": "Cationic",
+      "coord": [
+        "-5776780631/1591877277",
+        "-10043983058/3228636143",
+        "-7508476679/6639971946"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 10
+    },
+    {
+      "id": "cation_N20",
+      "kind": "Cationic",
+      "coord": [
+        "14763598333/8465117928",
+        "3878609502/5663345101",
+        "3786176375/9116113602"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 20
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-31671446196/7416559219",
+        "51546673/121728719",
+        "-1082055083/4112892527"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        12,
+        13,
+        14,
+        16,
+        17,
+        11
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-856416805/2106634963",
+        "214412108/5435017023",
+        "1426167451/6955909005"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        11,
+        12,
+        13,
+        16,
+        17
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N6",
+      "to": "cation_N10",
+      "distance": 3.787787423591117
+    },
+    {
+      "from": "cation_N6",
+      "to": "cation_N20",
+      "distance": 3.1791706671207978
+    },
+    {
+      "from": "cation_N6",
+      "to": "aromatic_ring0",
+      "distance": 4.191791048786518
+    },
+    {
+      "from": "cation_N6",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.5363657077037742
+    },
+    {
+      "from": "cation_N10",
+      "to": "cation_N20",
+      "distance": 6.757742414241676
+    },
+    {
+      "from": "cation_N10",
+      "to": "aromatic_ring0",
+      "distance": 3.6954160652514703
+    },
+    {
+      "from": "cation_N10",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.700308524425498
+    },
+    {
+      "from": "cation_N20",
+      "to": "aromatic_ring0",
+      "distance": 6.058203881452229
+    },
+    {
+      "from": "cation_N20",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.255170536259348
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.9109876420738505
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 5
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

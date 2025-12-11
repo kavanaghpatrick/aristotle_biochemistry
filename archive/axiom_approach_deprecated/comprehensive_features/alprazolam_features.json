@@ -1,0 +1,195 @@
+{
+  "molecule_name": "alprazolam",
+  "smiles": "CC1=NN=C2CN=C(C3=C2C(=CC(=C3)Cl)C1)C4=CC=CC=C4",
+  "molecular_weight": 307.78,
+  "logp": 3.91,
+  "num_h_donors": 0,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N2",
+      "kind": "Cationic",
+      "coord": [
+        "-22400594834/6571714869",
+        "-5701942980/3554699357",
+        "5130091874/9932547389"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 2
+    },
+    {
+      "id": "cation_N3",
+      "kind": "Cationic",
+      "coord": [
+        "-7776165848/3309895005",
+        "-6940509009/3216299446",
+        "-860148463/3682911289"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 3
+    },
+    {
+      "id": "cation_N6",
+      "kind": "Cationic",
+      "coord": [
+        "3206415433/2971446934",
+        "-2488211317/1289284065",
+        "-6619822226/7542006265"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 6
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-4789514330/6656761847",
+        "11909296701/9309740464",
+        "-3421414779/8709601991"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        11,
+        12,
+        13,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "4131098893/1021967480",
+        "-2624147261/8852972194",
+        "2870593013/5060348676"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        16
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "1793469278/2356439835",
+        "102085907/142978769",
+        "846336021/8705117497"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N2",
+      "to": "cation_N3",
+      "distance": 1.4111614117997546
+    },
+    {
+      "from": "cation_N2",
+      "to": "cation_N6",
+      "distance": 4.710584124075791
+    },
+    {
+      "from": "cation_N2",
+      "to": "aromatic_ring0",
+      "distance": 4.046195963335944
+    },
+    {
+      "from": "cation_N2",
+      "to": "aromatic_ring1",
+      "distance": 7.564983697513027
+    },
+    {
+      "from": "cation_N2",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.789133601536961
+    },
+    {
+      "from": "cation_N3",
+      "to": "cation_N6",
+      "distance": 3.495880470955455
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring0",
+      "distance": 3.8073400924212084
+    },
+    {
+      "from": "cation_N3",
+      "to": "aromatic_ring1",
+      "distance": 6.705217802820083
+    },
+    {
+      "from": "cation_N3",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.2464407178287065
+    },
+    {
+      "from": "cation_N6",
+      "to": "aromatic_ring0",
+      "distance": 3.710607148643226
+    },
+    {
+      "from": "cation_N6",
+      "to": "aromatic_ring1",
+      "distance": 3.6792731668126195
+    },
+    {
+      "from": "cation_N6",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.8358249154788515
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 5.106775321247977
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 1.6588519075824426
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.46528342471832
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 6
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

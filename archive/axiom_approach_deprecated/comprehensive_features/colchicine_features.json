@@ -1,0 +1,125 @@
+{
+  "molecule_name": "colchicine",
+  "smiles": "COC1=C(C(=CC2=C1C(=O)CC(C2)(NC(=O)C)CC3=CC=C(C=C3)OC)OC)OC",
+  "molecular_weight": 413.47,
+  "logp": 2.97,
+  "num_h_donors": 1,
+  "num_h_acceptors": 6,
+  "features": [
+    {
+      "id": "cation_N13",
+      "kind": "Cationic",
+      "coord": [
+        "8099393173/5557741183",
+        "-25441960368/9446370871",
+        "-522103621/6215366444"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 13
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "-45286848/15866219",
+        "1669520149/9278288232",
+        "-301175179/799113841"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        2,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "31882497323/8540280085",
+        "2016900766/2923454633",
+        "-4850636007/8205642037"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        18
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "810451154/702460995",
+        "-5030254025/8798498893",
+        "-328622838/911539631"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        5,
+        6,
+        7,
+        10,
+        12,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring0",
+      "distance": 5.189537592928942
+    },
+    {
+      "from": "cation_N13",
+      "to": "aromatic_ring1",
+      "distance": 4.108878609521793
+    },
+    {
+      "from": "cation_N13",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.16096251076264
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 6.6106672156239314
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.0779305164471245
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.880709168211164
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 4
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

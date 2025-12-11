@@ -1,0 +1,198 @@
+{
+  "molecule_name": "glipizide",
+  "smiles": "CC1=CC=C(C=C1)C(=O)NCCCCCNC(=O)NS(=O)(=O)C2=CC=C(C=C2)C",
+  "molecular_weight": 417.53,
+  "logp": 2.89,
+  "num_h_donors": 3,
+  "num_h_acceptors": 4,
+  "features": [
+    {
+      "id": "cation_N9",
+      "kind": "Cationic",
+      "coord": [
+        "31402624317/8693914769",
+        "-14750776509/8014746820",
+        "3411230670/2202439453"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 9
+    },
+    {
+      "id": "cation_N15",
+      "kind": "Cationic",
+      "coord": [
+        "-8238450295/6554576457",
+        "6971866081/4565418892",
+        "11503928753/9845862185"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 15
+    },
+    {
+      "id": "cation_N18",
+      "kind": "Cationic",
+      "coord": [
+        "-26359177469/7708266791",
+        "10832223640/8211930183",
+        "-197641836/9498448469"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 18
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "36911587737/5643644557",
+        "-657328180/1026101151",
+        "-1850195497/2922665246"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        1,
+        6,
+        5,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "id": "aromatic_ring1",
+      "kind": "Aromatic",
+      "coord": [
+        "-33424454954/4684657113",
+        "251177/5000000000",
+        "-7480436069/7435074167"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        22
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "-746436599/2654612305",
+        "-580817833/3915243242",
+        "-2339190127/5841530306"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        12,
+        13,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N9",
+      "to": "cation_N15",
+      "distance": 5.932250825024266
+    },
+    {
+      "from": "cation_N9",
+      "to": "cation_N18",
+      "distance": 7.867031820183793
+    },
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring0",
+      "distance": 3.843900155712119
+    },
+    {
+      "from": "cation_N9",
+      "to": "aromatic_ring1",
+      "distance": 11.198708574180188
+    },
+    {
+      "from": "cation_N9",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.671188378963226
+    },
+    {
+      "from": "cation_N15",
+      "to": "cation_N18",
+      "distance": 2.4768438865900344
+    },
+    {
+      "from": "cation_N15",
+      "to": "aromatic_ring0",
+      "distance": 8.291067968393657
+    },
+    {
+      "from": "cation_N15",
+      "to": "aromatic_ring1",
+      "distance": 6.45065662001159
+    },
+    {
+      "from": "cation_N15",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.4940785902803837
+    },
+    {
+      "from": "cation_N18",
+      "to": "aromatic_ring0",
+      "distance": 10.169386924587425
+    },
+    {
+      "from": "cation_N18",
+      "to": "aromatic_ring1",
+      "distance": 4.063736073215172
+    },
+    {
+      "from": "cation_N18",
+      "to": "hydrophobe_cluster0",
+      "distance": 3.485271523952019
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "aromatic_ring1",
+      "distance": 13.695339210785043
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.8432588522233395
+    },
+    {
+      "from": "aromatic_ring1",
+      "to": "hydrophobe_cluster0",
+      "distance": 6.882001921327105
+    }
+  ],
+  "feature_counts": {
+    "cationic": 3,
+    "aromatic": 2,
+    "hydrophobic": 1,
+    "total": 6
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "molecule_name": "metoprolol",
+  "smiles": "CCOC1=CC=C(C=C1)CCOC(C)CNC(C)C",
+  "molecular_weight": 265.4,
+  "logp": 3.03,
+  "num_h_donors": 1,
+  "num_h_acceptors": 3,
+  "features": [
+    {
+      "id": "cation_N15",
+      "kind": "Cationic",
+      "coord": [
+        "-33106700969/9927741675",
+        "2016869608/5913094157",
+        "862591159/5943057306"
+      ],
+      "protonated_at_pH7": true,
+      "atom_idx": 15
+    },
+    {
+      "id": "aromatic_ring0",
+      "kind": "Aromatic",
+      "coord": [
+        "27720134503/8977984501",
+        "-3935115659/9668828366",
+        "1210306371/5673036025"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        3,
+        8,
+        7,
+        6,
+        5,
+        4
+      ]
+    },
+    {
+      "id": "hydrophobe_cluster0",
+      "kind": "Hydrophobe",
+      "coord": [
+        "9795188687/9896877991",
+        "-1595403937/9206958689",
+        "534859767/5504919062"
+      ],
+      "protonated_at_pH7": false,
+      "atom_indices": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13,
+        17,
+        18
+      ]
+    }
+  ],
+  "distances": [
+    {
+      "from": "cation_N15",
+      "to": "aromatic_ring0",
+      "distance": 6.466115113118611
+    },
+    {
+      "from": "cation_N15",
+      "to": "hydrophobe_cluster0",
+      "distance": 4.355238765071837
+    },
+    {
+      "from": "aromatic_ring0",
+      "to": "hydrophobe_cluster0",
+      "distance": 2.114015392538457
+    }
+  ],
+  "feature_counts": {
+    "cationic": 1,
+    "aromatic": 1,
+    "hydrophobic": 1,
+    "total": 3
+  },
+  "metadata": {
+    "extraction_method": "RDKit ETKDG + UFF optimization",
+    "ph": 7.4,
+    "conformer_id": 0,
+    "version": "1.0"
+  }
+}
