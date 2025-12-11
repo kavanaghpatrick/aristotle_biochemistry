@@ -1,0 +1,49 @@
+{
+  "decision": "GO",
+  "pilot_results": [
+    {
+      "name": "Metformin",
+      "description": "Small, rigid (should prove via reachability)",
+      "mw": 129.16699999999997,
+      "n_conformers": 3,
+      "bounding_volume": 291.36814311155354,
+      "bounding_radius": 4.112612763058962,
+      "can_prove": true,
+      "proof_method": "reachability",
+      "volume_ratio": 0.037365249886331144,
+      "can_reach_phe": false
+    },
+    {
+      "name": "Terfenadine",
+      "description": "Known binder IC50=56nM (MUST NOT prove safe!)",
+      "mw": 471.68499999999955,
+      "n_conformers": 49,
+      "bounding_volume": 5872.927512909607,
+      "bounding_radius": 11.192368754964068,
+      "can_prove": false,
+      "proof_method": null,
+      "volume_ratio": 0.7531482396830198,
+      "can_reach_phe": true
+    },
+    {
+      "name": "Vancomycin",
+      "description": "Large glycopeptide (should prove via volume)",
+      "mw": 1449.2710000000025,
+      "n_conformers": 1,
+      "bounding_volume": 9721.983135908109,
+      "bounding_radius": 13.240023360430218,
+      "can_prove": true,
+      "proof_method": "volume_exclusion",
+      "volume_ratio": 1.2467537644457718,
+      "can_reach_phe": true
+    }
+  ],
+  "cavity_volume": 7797.83740234375,
+  "critical_test_passed": true,
+  "n_provable": 2,
+  "rationale": {
+    "terfenadine_correct": true,
+    "volume_exclusion_works": true,
+    "false_negative_rate": 0.0
+  }
+}

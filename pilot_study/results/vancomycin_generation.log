@@ -1,0 +1,17 @@
+[16:38:21] SMILES Parse Error: extra close parentheses while parsing: CC1C(C(CC(O1)OC2C(C(CC(O2)OC3C(C(CC(O3)(C(=O)C(C(C(=O)O)C)O)O)C)OC(=O)C)C)N(C)C)C)C)O)(C)O
+[16:38:21] SMILES Parse Error: check for mistakes around position 84:
+[16:38:21] )OC(=O)C)C)N(C)C)C)C)O)(C)O
+[16:38:21] ~~~~~~~~~~~~~~~~~~~~^
+[16:38:21] SMILES Parse Error: Failed parsing SMILES 'CC1C(C(CC(O1)OC2C(C(CC(O2)OC3C(C(CC(O3)(C(=O)C(C(C(=O)O)C)O)O)C)OC(=O)C)C)N(C)C)C)C)O)(C)O' for input: 'CC1C(C(CC(O1)OC2C(C(CC(O2)OC3C(C(CC(O3)(C(=O)C(C(C(=O)O)C)O)O)C)OC(=O)C)C)N(C)C)C)C)O)(C)O'
+
+================================================================================
+Generating conformer ensemble: vancomycin
+================================================================================
+SMILES: CC1C(C(CC(O1)OC2C(C(CC(O2)OC3C(C(CC(O3)(C(=O)C(C(C(=O)O)C)O)O)C)OC(=O)C)C)N(C)C)C)C)O)(C)O
+Traceback (most recent call last):
+  File "/Users/patrickkavanagh/aristotle_biochemistry/pilot_study/generate_conformer_ensemble.py", line 226, in <module>
+    ensemble = generate_conformer_ensemble(smiles, name, n_conformers=n_conf)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/patrickkavanagh/aristotle_biochemistry/pilot_study/generate_conformer_ensemble.py", line 47, in generate_conformer_ensemble
+    raise ValueError(f"Invalid SMILES: {smiles}")
+ValueError: Invalid SMILES: CC1C(C(CC(O1)OC2C(C(CC(O2)OC3C(C(CC(O3)(C(=O)C(C(C(=O)O)C)O)O)C)OC(=O)C)C)N(C)C)C)C)O)(C)O

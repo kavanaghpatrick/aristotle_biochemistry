@@ -1,0 +1,37 @@
+
+================================================================================
+Generating conformer ensemble: terfenadine
+================================================================================
+SMILES: CC(C)(C)c1ccc(cc1)C(O)CCCN2CCC(CC2)C(O)(c3ccccc3)c4ccccc4
+  MW: 471.7 Da
+  Atoms: 76
+  Rotatable bonds: 10
+
+🔄 Generating 100 conformers...
+  Generated: 100 conformers in 0.9s
+🔧 Optimizing with MMFF...
+  Optimized in 0.3s
+  Energy range: 100.69 to 120.79 kcal/mol
+  Kept 49/100 within 10.0 kcal/mol
+
+📊 Extracting conformer geometries...
+
+⚪ Calculating minimal bounding sphere...
+  Center: (0.00, -0.00, 0.00)
+  Radius: 11.19 Å
+  Volume: 5873 Å³
+
+📈 Ensemble Statistics:
+  Conformers: 49
+  Energy span: 9.85 kcal/mol
+  Avg pairwise RMSD: 6.45 Å (sample)
+
+✅ Ensemble generation complete!
+💾 Saved to: pilot_study/conformers/terfenadine_ensemble.json
+
+================================================================================
+SUMMARY: terfenadine
+================================================================================
+Conformers: 49
+Bounding radius: 11.19 Å
+Bounding volume: 5873 Å³
