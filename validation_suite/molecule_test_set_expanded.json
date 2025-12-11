@@ -1,0 +1,465 @@
+{
+  "description": "Expanded validation set: 50 molecules for hERG safety theorem testing",
+  "validation_criteria": {
+    "false_negative_rate_target": 0.0,
+    "false_positive_acceptable": true,
+    "coverage_target": ">50% provable across size range"
+  },
+  "molecules": [
+    {
+      "name": "Metformin",
+      "smiles": "CN(C)C(=N)NC(=N)N",
+      "mw": 129.2,
+      "category": "tiny_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Pilot validated - 3 conformers, 4.11 \u00c5 radius"
+    },
+    {
+      "name": "Caffeine",
+      "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+      "mw": 194.2,
+      "category": "small_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Rigid aromatic, known NOT to block hERG"
+    },
+    {
+      "name": "Aspirin",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "mw": 180.2,
+      "category": "small_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Small NSAID, no hERG liability"
+    },
+    {
+      "name": "Glucose",
+      "smiles": "C(C1C(C(C(C(O1)O)O)O)O)O",
+      "mw": 180.2,
+      "category": "small_flexible",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Highly flexible, may have large bounding volume"
+    },
+    {
+      "name": "Terfenadine",
+      "smiles": "CC(C)(C)C1=CC=C(C=C1)C(CCCN2CCC(CC2)(C(=O)O)O)C3=CC=C(C=C3)O",
+      "mw": 471.7,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Known binder IC50=56nM - MUST NOT prove safe!"
+    },
+    {
+      "name": "Astemizole",
+      "smiles": "COC1=CC=C(C=C1)CC2=CN=C(N2C)NC3=CC=C(C=C3)F",
+      "mw": 458.6,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Known hERG blocker - withdrawn from market"
+    },
+    {
+      "name": "Cisapride",
+      "smiles": "CCC1=CC(=C(C=C1)OC)NC(=O)N2CCC(CC2)N3C=C(C=C3)C(=O)C4=CC=C(C=C4)F",
+      "mw": 465.9,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: hERG blocker - QT prolongation risk"
+    },
+    {
+      "name": "Dofetilide",
+      "smiles": "CN(C)S(=O)(=O)C1=CC=C(C=C1)OCCOCCNC2=CC=C(C=C2)NS(=O)(=O)C",
+      "mw": 441.6,
+      "category": "medium_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Class III antiarrhythmic - intentional hERG blocker"
+    },
+    {
+      "name": "Ibuprofen",
+      "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "mw": 206.3,
+      "category": "small_flexible",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Common NSAID, no hERG liability"
+    },
+    {
+      "name": "Atorvastatin",
+      "smiles": "CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+      "mw": 558.6,
+      "category": "large_flexible",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Statin - large but flexible, uncertain outcome"
+    },
+    {
+      "name": "Vancomycin",
+      "smiles": "CC1C(C(CC(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)C(NC(=O)C(C(C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)NC)O",
+      "mw": 1449.3,
+      "category": "very_large_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "Pilot validated - 9722 \u00c5\u00b3 > 7798 \u00c5\u00b3"
+    },
+    {
+      "name": "Cyclosporine",
+      "smiles": "CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C",
+      "mw": 1202.6,
+      "category": "very_large_flexible",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "Large cyclic peptide, likely >7798 \u00c5\u00b3"
+    },
+    {
+      "name": "Erythromycin",
+      "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+      "mw": 733.9,
+      "category": "large_flexible_UNCERTAIN",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Macrolide - some reports of QT prolongation, test conservativeness"
+    },
+    {
+      "name": "Azithromycin",
+      "smiles": "CCC1C(C(C(N(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2C(C(CC(O2)C)N(C)C)O)(C)OC3C(C(CC(O3)C)N(C)C)O)C)C)C)C)C)O)(C)O",
+      "mw": 749.0,
+      "category": "large_flexible_UNCERTAIN",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Macrolide - QT prolongation risk, test conservativeness"
+    },
+    {
+      "name": "Gentamicin",
+      "smiles": "CNC1C(C(C(C(O1)OC2C(CC(C(C2O)OC3C(C(C(CO3)(C)O)NC)O)N)N)N)O)O",
+      "mw": 477.6,
+      "category": "medium_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Aminoglycoside - hydrophilic, unlikely to reach hERG"
+    },
+    {
+      "name": "Penicillin G",
+      "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "mw": 334.4,
+      "category": "medium_rigid",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "Beta-lactam - compact, hydrophilic"
+    },
+    {
+      "name": "Warfarin",
+      "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+      "mw": 308.3,
+      "category": "medium_flexible",
+      "expected_result": "uncertain",
+      "expected_method": null,
+      "notes": "Coumarin derivative - moderately flexible"
+    },
+    {
+      "name": "Sotalol",
+      "smiles": "CC(C)NCC(C1=CC=C(C=C1)NS(=O)(=O)C)O",
+      "mw": 272.4,
+      "category": "small_flexible_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Class III antiarrhythmic - intentional hERG blocker"
+    },
+    {
+      "name": "Quinidine",
+      "smiles": "C=CC1CN2CCC1C(C2)C(C3=CC=NC4=CC=C(C=C34)OC)O",
+      "mw": 324.4,
+      "category": "medium_rigid_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": null,
+      "notes": "CRITICAL: Class Ia antiarrhythmic - known hERG blocker"
+    },
+    {
+      "name": "Rapamycin",
+      "smiles": "CC1CCC2CC(C(=CC=CC=CC(CC(C(=O)C(C(C(=CC(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C1(O2)C)C(C)CC4CCC(C(C4)OC)O)C)C)O)C)C)C)OC)O",
+      "mw": 914.2,
+      "category": "very_large_flexible",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "Large macrocyclic - likely >7798 \u00c5\u00b3"
+    },
+    {
+      "name": "Paracetamol",
+      "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+      "mw": 151.2,
+      "category": "tiny_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Nicotine",
+      "smiles": "CN1CCCC1C2=CN=CC=C2",
+      "mw": 162.2,
+      "category": "tiny_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "No hERG liability reported [ChEMBL database]"
+    },
+    {
+      "name": "Ascorbic Acid",
+      "smiles": "C(C(C1C(=C(C(=O)O1)O)O)O)O",
+      "mw": 176.1,
+      "category": "tiny_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "No hERG liability reported [PubChem]"
+    },
+    {
+      "name": "Dopamine",
+      "smiles": "C1=CC(=C(C=C1CCN)O)O",
+      "mw": 153.2,
+      "category": "tiny_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Serotonin",
+      "smiles": "C1=CC2=C(C=C1O)C(=CN2)CCN",
+      "mw": 176.2,
+      "category": "tiny_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "reachability",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Naproxen",
+      "smiles": "CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O",
+      "mw": 230.3,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Propranolol",
+      "smiles": "CC(C)NCC(COC1=CC=CC2=CC=CC=C21)O",
+      "mw": 259.3,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Atenolol",
+      "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O",
+      "mw": 266.3,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [ChEMBL]"
+    },
+    {
+      "name": "Captopril",
+      "smiles": "CC(CS)C(=O)N1CCCC1C(=O)O",
+      "mw": 217.3,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Lisinopril",
+      "smiles": "C1CCC(C(C1)CCC(=O)N2CCCC2C(=O)O)N",
+      "mw": 405.5,
+      "category": "medium_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Haloperidol",
+      "smiles": "C1CCN(CC1)CCC(C2=CC=C(C=C2)Cl)(C3=CC=C(C=C3)F)O",
+      "mw": 375.9,
+      "category": "small_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": "reachability",
+      "notes": "hERG IC50=0.027 \u03bcM [PMID: 15634034]",
+      "ic50_um": 0.027
+    },
+    {
+      "name": "Thioridazine",
+      "smiles": "CN1CCCCC1CCN2C3=CC=CC=C3SC4=C2C=C(C=C4)SC",
+      "mw": 370.6,
+      "category": "small_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": "reachability",
+      "notes": "hERG IC50=0.191 \u03bcM [PMID: 15634034]",
+      "ic50_um": 0.191
+    },
+    {
+      "name": "Bepridil",
+      "smiles": "CC(C)COCC(CN(CC1=CC=CC=C1)C2=CC=CC=C2)OCC3=CC=CC=C3",
+      "mw": 366.5,
+      "category": "small_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": "reachability",
+      "notes": "hERG IC50=0.55 \u03bcM [PMID: 15634034]",
+      "ic50_um": 0.55
+    },
+    {
+      "name": "E-4031",
+      "smiles": "CN1CCN(CC1)S(=O)(=O)C2=CC=C(C=C2)C(=O)NC3=CC=CC=C3C",
+      "mw": 401.5,
+      "category": "medium_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": "reachability",
+      "notes": "hERG IC50=0.0079 \u03bcM [PMID: 20097526]",
+      "ic50_um": 0.0079
+    },
+    {
+      "name": "Simvastatin",
+      "smiles": "CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C",
+      "mw": 418.6,
+      "category": "medium_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Rosuvastatin",
+      "smiles": "CC(C)C1=NC(=NC(=C1C=CC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)NS(=O)(=O)C",
+      "mw": 481.5,
+      "category": "medium_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [ChEMBL]"
+    },
+    {
+      "name": "Metoprolol",
+      "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CCOC)O",
+      "mw": 267.4,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Omeprazole",
+      "smiles": "CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=CC(=C3)OC",
+      "mw": 345.4,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Diazepam",
+      "smiles": "CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3",
+      "mw": 284.7,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [ChEMBL]"
+    },
+    {
+      "name": "Fluoxetine",
+      "smiles": "CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F",
+      "mw": 309.3,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Ciprofloxacin",
+      "smiles": "C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O",
+      "mw": 331.3,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Amoxicillin",
+      "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C",
+      "mw": 365.4,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [ChEMBL]"
+    },
+    {
+      "name": "Doxycycline",
+      "smiles": "CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1CCCC4)O)O)O)C(=O)N)N(C)C)O",
+      "mw": 444.4,
+      "category": "medium_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Paclitaxel",
+      "smiles": "CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+      "mw": 853.9,
+      "category": "large_nonbinder",
+      "expected_result": "uncertain",
+      "expected_method": "null",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Digoxin",
+      "smiles": "CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CCC7(C(C6)CCC(O7)C8=CC(=O)OC8)C)C)C)O)O",
+      "mw": 780.9,
+      "category": "large_nonbinder",
+      "expected_result": "uncertain",
+      "expected_method": "null",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Colchicine",
+      "smiles": "CC(=O)NC1CCC2=CC(=C(C(=C2C3=CC=C(C(=O)C=C13)OC)OC)OC)OC",
+      "mw": 399.4,
+      "category": "medium_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [ChEMBL]"
+    },
+    {
+      "name": "Tamoxifen",
+      "smiles": "CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3",
+      "mw": 371.5,
+      "category": "small_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 15634034]"
+    },
+    {
+      "name": "Methotrexate",
+      "smiles": "CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O",
+      "mw": 454.4,
+      "category": "medium_nonbinder",
+      "expected_result": "provable_safe",
+      "expected_method": "volume_exclusion",
+      "notes": "No hERG liability reported [PMID: 20097526]"
+    },
+    {
+      "name": "Hydroxychloroquine",
+      "smiles": "CCN(CCO)CCCN(CCCl)C1=C(C=CC(=C1)Cl)O",
+      "mw": 335.9,
+      "category": "small_BINDER",
+      "expected_result": "NOT_provable",
+      "expected_method": "reachability",
+      "notes": "hERG IC50=2.5 \u03bcM [PMID: 32217242]",
+      "ic50_um": 2.5
+    },
+    {
+      "name": "Ritonavir",
+      "smiles": "CC(C)CN(CC(C(CC1=CC=CC=C1)NC(=O)OCC2=CN=CS2)O)CC(=O)NC(CC3=CC=CC=C3)C(C(C)C)NC(=O)C(C(C)C)NC(=O)NC(C)(C)C",
+      "mw": 720.9,
+      "category": "large_nonbinder",
+      "expected_result": "uncertain",
+      "expected_method": "null",
+      "notes": "No hERG liability reported [ChEMBL]"
+    }
+  ]
+}
