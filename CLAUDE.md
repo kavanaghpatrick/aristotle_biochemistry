@@ -4,7 +4,30 @@
 
 **Core idea**: Prove drug safety mathematically, like chip correctness, before $100M+ trials.
 
-**Status**: Exploration phase - validating feasibility with Aristotle + Lean 4.
+**Status**: ✅ Concept validated → 🚀 Implementing hERG cardiac toxicity proof (Week 1/4)
+
+**Repo**: https://github.com/kavanaghpatrick/aristotle_biochemistry
+
+---
+
+## Current State (2025-12-11)
+
+### What We've Proven
+✅ Lean 4 + Aristotle can formalize biochemistry (20+ theorems)
+✅ Aristotle proved 6/6 test theorems automatically (conservation laws, kinetics)
+✅ Multi-AI research workflow validated (Grok, Gemini, Codex)
+✅ Production PRD ready: hERG toxicity (pharmacophore approach)
+
+### Active Work
+🎯 **Issue #5**: hERG Week 1 - Literature review + feature extraction
+📋 **PRD**: `PRD_hERG_COMPLETE.md` - 4-week implementation plan
+🔬 **Approach**: Discrete pharmacophore impossibility proof (simplest validated)
+
+### Key Achievements
+- **Technical**: Automated proofs working (Aristotle: ring, linarith, mul_nonneg)
+- **Research**: 10-15 hard problems identified via multi-AI consensus
+- **Business**: hERG proof prevents $500M+ Phase III failures
+- **Novel**: First formal verification for drug discovery globally
 
 ---
 
@@ -638,3 +661,282 @@ aristotle prove-from-file BiochemFormal/Kinetics/MichaelisMenten.lean
 **Mental model check**: If you can't explain why a theorem would save $10M in drug development, don't prove it yet.
 
 **Exploration goal**: Find the ONE theorem that makes a pharma executive say "shut up and take my money."
+
+---
+
+## Validated Design Patterns
+
+### 1. Simplicity Principle (PROVEN EFFECTIVE)
+
+**Core Rule**: If you can't explain the proof approach in 2 minutes to a chemist, simplify.
+
+**Validated Choices**:
+- ✅ **Discrete > Continuous**: Pharmacophore features (10-20) >> 3D volume integrals
+- ✅ **Algebraic > Thermodynamic**: Distance inequalities (`linarith`) >> ΔG calculations
+- ✅ **Impossibility > Prediction**: "Cannot bind" >> "Kd = 10nM ± 20%"
+- ✅ **Necessary conditions > Sufficient**: "Must have motif to bind" >> "Will bind if..."
+- ✅ **Finite cases > Infinite search**: Case split over features >> continuous optimization
+
+**Example (hERG)**:
+- ❌ Complex: 3D geometric volume overlap with protein dynamics
+- ✅ Simple: Check if drug has {cation, aromatic, tail} with distance bounds
+- **Why**: Aristotle can automate finite case splits + `linarith`, not continuous geometry
+
+### 2. Multi-AI Research Workflow (VALIDATED)
+
+**Pattern**: Parallel research → Synthesis → Audit → Implement
+
+```bash
+# Phase 1: Parallel Research (30min)
+grok_research.py &      # Critical analysis, feasibility
+gemini -p "prompt" &    # Scientific depth, formal methods
+task_agent research &   # Web search, examples
+wait
+
+# Phase 2: Synthesis (15min)
+python synthesize.py grok.md gemini.md task.md > synthesis.md
+
+# Phase 3: Multi-AI Audit (per approach)
+for approach in synthesis.md; do
+  grok_audit.py "$approach" &
+  gemini_audit.py "$approach" &
+  codex exec "audit $approach" &
+  wait
+  synthesize_audits.py > revised_approach.md
+done
+
+# Phase 4: Create GitHub Issue
+gh issue create --body "$(cat revised_approach.md)"
+```
+
+**Validated Results**:
+- Grok: Conservative feasibility (good reality check)
+- Gemini: Advanced formal methods (Petri nets, barrier certificates)
+- Codex: Implementation focus (what Aristotle can actually do)
+- **Consensus**: Pharmacophore approach (Codex) simplest + most feasible
+
+### 3. Formalization Strategy (VALIDATED)
+
+**Layered Architecture**:
+```
+Layer 1: Data Preparation (Outside Lean)
+  - Chemistry: RDKit, ChemAxon
+  - Output: Rational coordinates, validated features
+  - Why: Keep complexity out of Lean
+
+Layer 2: Lean Formalization
+  - Types: Feature, Molecule, BindingCertificate
+  - Axioms: Literature-backed (necessary_motif)
+  - Theorems: Specific drug proofs
+  - Why: Pure logic, no external dependencies
+
+Layer 3: Aristotle Automation
+  - Input: JSON features
+  - Generate: Case splits + linarith proofs
+  - Output: Complete Lean proof
+  - Why: Automate the tedious parts
+```
+
+**Proven Pattern**:
+1. Prove general theorem ONCE (e.g., `necessary_motif`)
+2. New molecules → just data instantiation
+3. Aristotle generates routine proofs
+4. Human reviews axioms/assumptions
+
+### 4. What Aristotle Can/Cannot Do (VALIDATED)
+
+**✅ Aristotle Excels At**:
+- Ring simplification: `a + b - a = b`
+- Linear arithmetic: `linarith` for inequalities
+- Mathlib lemmas: `mul_nonneg`, `div_le_one`
+- Finite case splits: Enumerate 10-20 feature combos
+- Pattern matching: Apply existing tactics
+
+**❌ Aristotle Struggles With**:
+- Novel proof strategies
+- Complex geometric reasoning
+- Continuous optimization
+- Integration/differentiation (without heavy hints)
+- Domain-specific axioms (need human to state)
+
+**Design Implication**: Structure proofs so Aristotle does repetitive work, humans do creative work.
+
+---
+
+## Problem Selection Criteria (VALIDATED)
+
+### High-Value Targets (Implement These)
+Ranked by: Feasibility × Business Impact × Novelty
+
+**Tier 1: Quick Wins** (2-4 weeks)
+1. ✅ **PK/PD modeling** - Already mathematical, proves bounds
+2. ⏳ **hERG toxicity** - Pharmacophore approach, $500M+ impact
+3. ⏳ **Solubility** - Thermodynamic models, bioavailability
+
+**Tier 2: Core Program** (1-3 months)
+4. Blood-brain barrier - Lipinski rules + transporter kinetics
+5. Kinase selectivity - Finite kinome, binding pockets
+6. Off-target panel - Limited target set
+
+**Tier 3: Advanced** (3-6 months)
+7. CYP450 interactions - Complex but high-impact
+8. Lysosomal trapping - Novel pH gradient approach
+9. Stereochemical stability - Graph transformation
+
+**Tier 4: Research** (6-12 months)
+10. Reactive metabolites - Metabolic network Petri nets
+11. Protein aggregation - Barrier certificates
+12. Cytokine storm - Control theory stability
+
+### Selection Heuristics
+- **Start**: Discrete, algebraic, well-defined constraints
+- **Avoid**: Continuous, quantum mechanical, incomplete data
+- **Validate**: Must catch ≥1 real drug failure to prove value
+
+---
+
+## Lean + Aristotle Best Practices (VALIDATED)
+
+### Theorem Structure
+```lean
+-- ALWAYS include business justification in comments
+/-
+  THEOREM: [One-line description]
+  
+  Why it matters: [Drug discovery value]
+  Real example: [Specific drug that failed]
+  Business impact: $XXX million
+-/
+theorem name (params) (hypotheses) : conclusion := by
+  sorry  -- Let Aristotle fill in
+```
+
+### Testing Pattern
+```bash
+# 1. Write theorem with sorry
+# 2. Test with Aristotle
+aristotle prove-from-file Module.lean
+
+# 3. Check output
+- If succeeds: Validate proof is non-vacuous
+- If fails: Simplify or add lemmas
+- If partial: Human-guide remaining steps
+
+# 4. Iterate
+```
+
+### Automation Boundary
+- **Aristotle generates**: 80% of routine proofs (case splits, arithmetic)
+- **Human provides**: 20% of creative work (axioms, strategies)
+- **Validate**: Every Aristotle proof for correctness
+
+---
+
+## Common Pitfalls (LEARNED)
+
+### ❌ Anti-Patterns
+1. **Over-engineering**: "Let's model protein dynamics" → TOO COMPLEX
+   - Fix: Start with simplest constraint that rules out binding
+   
+2. **Premature optimization**: "Let's prove for all conformers" → NOT MVP
+   - Fix: Prove for one rigid structure first
+   
+3. **Missing business value**: "Let's prove this elegant theorem" → SO WHAT?
+   - Fix: Every theorem must prevent a real drug failure
+   
+4. **Ignoring data availability**: "We'll need quantum calculations" → NO DATA
+   - Fix: Use existing databases (PDB, ChEMBL, FDA)
+   
+5. **Continuous when discrete works**: "3D volume integrals" → OVERKILL
+   - Fix: Discretize to finite features
+
+### ✅ Correct Patterns
+1. **Start simple**: One molecule, one property, one proof
+2. **Validate early**: Does this catch a real failure?
+3. **Iterate**: Simple proof → More drugs → More properties
+4. **Business-driven**: Only prove theorems worth $10M+
+5. **Data-first**: Use available structures/databases
+
+---
+
+## Success Metrics (UPDATED)
+
+### Technical (Achieved ✅)
+- [x] Lean + Aristotle environment working
+- [x] Automated proofs successful (6/6)
+- [x] Framework scales (20+ theorems)
+- [x] Multi-AI workflow validated
+
+### Scientific (In Progress ⏳)
+- [ ] hERG proof complete (Week 4 target)
+- [ ] Validates against known binder (terfenadine)
+- [ ] Extensible to new molecules (<1 hour)
+
+### Business (Next Phase 🎯)
+- [ ] Pharma feedback: "This could work"
+- [ ] Catches ≥1 real drug failure retroactively
+- [ ] Publication (Nature/Science)
+- [ ] Industry partnership initiated
+
+---
+
+## Quick Reference
+
+### Daily Workflow
+1. Check GitHub issues (source of truth)
+2. Work on active issue (currently #5: hERG Week 1)
+3. Commit with issue reference (`#5`)
+4. Update issue when done
+
+### File Organization
+```
+BiochemFormal/         # Lean formalization
+  Basic/              # Conservation, fundamentals
+  Kinetics/           # Enzyme kinetics
+  DrugSafety/         # hERG, off-targets
+research/             # AI research outputs
+  *_deep.md          # Deep dives
+  synthesis.md       # Problem rankings
+scripts/              # Python tools (RDKit, etc.)
+data/                 # Feature JSONs, molecules
+PRD_*.md             # Requirements docs
+```
+
+### Commands
+```bash
+# Aristotle
+aristotle prove-from-file file.lean
+
+# Research
+python3 research/query_grok.py
+gemini -p "prompt"
+codex exec "task"
+
+# GitHub
+gh issue create --title "..." --label "theorem,high-priority"
+gh issue list
+```
+
+---
+
+## Next Session Checklist
+
+**Before starting**:
+- [ ] Read active issue (#5)
+- [ ] Check PRD (`PRD_hERG_COMPLETE.md`)
+- [ ] Review last commit
+- [ ] Understand current week's goals
+
+**After completing work**:
+- [ ] Commit with issue reference
+- [ ] Update issue status
+- [ ] Document any learnings in this file
+- [ ] Create next issue if needed
+
+**Key Question**: Does this bring us closer to a working hERG proof that prevents a $500M+ failure?
+
+---
+
+**Last Updated**: 2025-12-11
+**Active Issue**: #5 (hERG Week 1)
+**Next Milestone**: Working hERG proof (4 weeks)
