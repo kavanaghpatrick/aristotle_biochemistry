@@ -31,14 +31,19 @@
 |----------|-------|----------|
 | **Proven Safe (Geometry)** | **16** | Metformin, Caffeine, Vancomycin, Ibuprofen, Cyclosporine, Rapamycin, +10 more |
 | **Binders (NOT Proven)** | 11 | Terfenadine (IC50=56nM), Haloperidol (IC50=27nM), E-4031 (IC50=7.9nM) ✅ |
-| **Unprovable (Safe)** | 21 | Warfarin, Atorvastatin, Lisinopril, Penicillin G, +17 more |
+| **Unprovable (Safe)** | 21* | Warfarin, Atorvastatin, Lisinopril, Penicillin G, +17 more |
 | **SMILES Errors** | 2 | Azithromycin, Digoxin |
+
+*\*Unprovable count includes 16 molecules previously proven by empirical methods (removed for strict geometric rigor) + 5 truly unprovable molecules.*
 
 **Critical Safety Metrics**:
 - **0% False Negative Rate** (0/11 binders proven safe) ✅
 - **43.2% Coverage** (16/37 non-binders proven safe via pure math) 📊
 - **96% Processing Rate** (48/50 molecules) ✅
 - **100% Mathematical Soundness** (no empirical assumptions) 🔒
+
+**Dataset Limitations**:
+*Erythromycin and Fluoxetine are labeled as non-binders in our validation dataset [PMID 15634034], though literature suggests weak hERG blocking activity (IC50 ~40µM and ~2-10µM respectively). The system correctly refused to prove them safe (marked unprovable), demonstrating conservative behavior.*
 
 ## 🚀 Quick Start
 
@@ -254,38 +259,47 @@ axiom hydrophobicity_exclusion_axiom :
 ## 🚦 Production Readiness
 
 ### ✅ Ready For
-- **Production drug development** (50 molecule validation complete, 86.5% coverage)
-- **High-stakes pharma decisions** (0% false negative rate, exceeds 80% coverage target)
-- Academic publication (Nature Methods, POPL)
-- Conference presentations (ISMB, CPP)
-- Proof-of-concept pharma demos
-- GitHub open-source release
+- **Proof-of-concept pharma demos** (43.2% coverage with 100% mathematical rigor)
+- **Academic publication** (J. Chem. Inf. Model., ISMB, POPL - computational methods focus)
+- **Conference presentations** (CPP, ISMB - novel formal methods application)
+- **GitHub open-source release** (research collaboration)
+- **Research collaboration** (solid mathematical foundation proven)
 
 ### ⚠️ Not Ready For (Without Further Work)
-- Real-time screening (needs performance optimization)
-- Very large scale screening (100K+ molecules - needs infrastructure)
+- **Production drug development** (needs 60-70% coverage minimum)
+- **High-stakes pharma decisions** (43.2% coverage insufficient for critical screening)
+- **Nature Methods publication** (requires 70%+ coverage, 200+ molecule validation)
+- **Real-time screening** (needs performance optimization)
+- **Very large scale screening** (100K+ molecules - needs infrastructure)
 
-**Recommendation**: **PRODUCTION READY** for pharmaceutical safety screening with 86.5% coverage and 0% false negative rate.
+**Recommendation**: **RESEARCH VALIDATED** proof-of-concept with solid mathematical foundation. Target 60-70% coverage via pure math expansion (steric clashes, pharmacophore absence) before production use.
 
 ## 🗺️ Roadmap
 
 ### Completed ✅
-- [x] Fix SMILES parsing errors (2/3 resolved - erythromycin, rapamycin fixed)
+- [x] Multi-agent academic review (identified empirical flaws via Grok, Gemini, Codex, Claude)
+- [x] Pure math rollback (removed 3 unsound empirical axioms)
 - [x] Expand validation to 50 molecules (48/50 successfully processed)
-- [x] Achieve 80%+ coverage (86.5% achieved via gap closure methods)
-- [x] Implement multi-method proof approach (5 methods: geometry + electrostatics + hydrophobicity)
+- [x] Fix SMILES parsing errors (2/3 resolved - erythromycin, rapamycin fixed)
+- [x] Achieve 43.2% coverage with 100% mathematical rigor (pure geometry only)
+
+### In Progress 🔄
+- [ ] Implement steric clash detection (pure geometry) → +5-10 molecules
+- [ ] Implement pharmacophore absence (graph theory) → +3-5 molecules
+- [ ] Target: 55-65% coverage with 100% mathematical soundness
 
 ### Short-term (Next 2 Weeks)
-- [ ] External peer review of proofs
-- [ ] Pharma-ready documentation (methodology, limitations)
-- [ ] Export proofs to PDF/HTML
+- [ ] External peer review of pure math proofs
+- [ ] Documentation of rollback rationale and expansion strategy
 - [ ] Fix remaining 2 SMILES errors (azithromycin, digoxin)
+- [ ] Export proofs to PDF/HTML
 
 ### Long-term (Next 6 Months)
+- [ ] Achieve 60-70% coverage via pure math expansion
+- [ ] Validate on 200+ molecule set
+- [ ] Submit to J. Chem. Inf. Model. or ISMB (computational methods)
 - [ ] Extend to other off-target effects (CYP450, KCNQ1)
 - [ ] Integrate with drug design pipelines
-- [ ] Cross-validate against traditional docking methods
-- [ ] Submit to Nature Methods
 
 ## 🤝 Contributing
 
@@ -344,16 +358,16 @@ Single conformer analysis misses flexible molecules. Multi-conformer approach:
 
 | System | Status | Details |
 |--------|--------|---------|
-| **Lean Build** | ✅ PASS | 1436 jobs, 0 errors |
-| **Axioms** | ✅ CLEAN | Mathlib only (+3 justified) |
+| **Lean Build** | ✅ PASS | 3 jobs, 0 errors (simplified after pure math rollback) |
+| **Axioms** | ✅ CLEAN | Mathlib only (+1 domain axiom: BindingRequiresFitAndReach) |
 | **Git** | ✅ SYNCED | All pushed, clean working tree |
-| **Validation** | ✅ PASS | 0% FN, 86.5% coverage |
-| **GitHub** | ✅ CLEAN | 5 issues closed, 5 future work |
-| **Docs** | ✅ COMPLETE | 10 MD files, comprehensive |
+| **Validation** | ✅ PASS | 0% FN, 43.2% coverage (pure math only) |
+| **GitHub** | ✅ CLEAN | Issues documented, expansion plan ready |
+| **Docs** | ✅ COMPLETE | Rollback documented, expansion strategy defined |
 | **Python** | ✅ OK | All dependencies available |
 | **Tests** | ✅ PASS | 48/50 molecules processed |
 
-**Risk Level**: LOW
+**Risk Level**: LOW (conservative, mathematically sound)
 
 ## 🎯 Citation
 
@@ -371,8 +385,8 @@ If you use this work in research, please cite:
 
 ---
 
-**Status**: **PRODUCTION READY** - 86.5% coverage, 0% false negatives, 5 proof methods validated on 48/50 molecules
+**Status**: **RESEARCH VALIDATED** - 43.2% coverage, 0% false negatives, 2 pure geometric proof methods validated on 48/50 molecules
 **Last Updated**: 2025-12-11
 **Repository**: https://github.com/kavanaghpatrick/aristotle_biochemistry
 
-**✅ ALL SYSTEMS GO - READY FOR PHARMACEUTICAL DEPLOYMENT!**
+**✅ SOLID MATHEMATICAL FOUNDATION - PROOF-OF-CONCEPT COMPLETE**
