@@ -195,6 +195,44 @@ Requires proof that radius is non-negative.
 def mk_bounding_sphere (center : Point3D) (radius : ℝ) (h : radius ≥ 0) : BoundingSphere :=
   ⟨center, radius, h⟩
 
+/-! ## Molecular Structures for Pharmacophore Proofs -/
+
+/--
+Aromatic ring representation for pharmacophore proofs.
+-/
+structure AromaticRing where
+  ring_id : ℕ
+  centroid : Point3D
+  atom_indices : List ℕ
+
+/--
+Basic nitrogen representation for pharmacophore proofs.
+-/
+structure BasicNitrogen where
+  atom_idx : ℕ
+  position : Point3D
+  hybridization : String
+
+/--
+Molecule structure for safety proofs.
+-/
+structure Molecule where
+  name : String
+  smiles : String
+  num_atoms : ℕ
+  aromatic_rings : List AromaticRing := []
+  basic_nitrogens : List BasicNitrogen := []
+
+/-!
+## Note on Binding Predicates
+
+Binding and safety predicates (CanBind, CannotBind) are defined in specific proof modules
+(e.g., Pharmacophore.lean, Reachability.lean) based on geometric constraints.
+
+This keeps Core.lean axiom-free and allows different proof strategies to
+define binding differently while maintaining mathematical rigor.
+-/
+
 /-! ## Verification -/
 
 -- Verify NO custom axioms in key definitions

@@ -1,0 +1,172 @@
+[
+  {
+    "molecule": "Warfarin",
+    "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 2,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Atorvastatin",
+    "smiles": "CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 4,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Lisinopril",
+    "smiles": "CCCC[C@H](C(=O)N1CCC[C@H]1C(=O)O)[NH3+]",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No aromatic rings",
+    "aromatic_count": 0,
+    "nitrogen_count": 1,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Penicillin G",
+    "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 1,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Colchicine",
+    "smiles": "CC(=O)NC1CCC2=CC(=C(C(=C2C=C1OC)OC)OC)OC",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 1,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Naproxen",
+    "smiles": "CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 2,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Simvastatin",
+    "smiles": "CCC(C)(C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@@H]12",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No aromatic rings",
+    "aromatic_count": 0,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Omeprazole",
+    "smiles": "CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=CC(=C3)OC",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 3,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Amoxicillin",
+    "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "aromatic_count": 1,
+    "nitrogen_count": 1,
+    "valid_pairs": [],
+    "min_distortion": 1.2487582453136903,
+    "best_pair": {
+      "aromatic_id": 2,
+      "nitrogen_idx": 20,
+      "distance": 3.7512417546863097,
+      "distortion": 1.2487582453136903
+    },
+    "reason": "All pairs violate distance constraint (min distortion: 1.25 \u00c5)"
+  },
+  {
+    "molecule": "Doxycycline",
+    "smiles": "CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1C=CC=C4O)O)O)O)C(=O)N)N(C)C)O",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "aromatic_count": 1,
+    "nitrogen_count": 1,
+    "valid_pairs": [],
+    "min_distortion": 0.6461902621552644,
+    "best_pair": {
+      "aromatic_id": 3,
+      "nitrogen_idx": 28,
+      "distance": 7.646190262155264,
+      "distortion": 0.6461902621552644
+    },
+    "reason": "All pairs violate distance constraint (min distortion: 0.65 \u00c5)"
+  },
+  {
+    "molecule": "Paclitaxel",
+    "smiles": "CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No basic nitrogen",
+    "aromatic_count": 3,
+    "nitrogen_count": 0,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Erythromycin",
+    "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No aromatic rings",
+    "aromatic_count": 0,
+    "nitrogen_count": 1,
+    "min_distortion": Infinity
+  },
+  {
+    "molecule": "Gentamicin",
+    "smiles": "CNC1C(C(C(C(C1O)OC2C(CC(C(O2)CN)O)N)OC3C(C(C(CO3)O)O)NC)O)O",
+    "has_embedding": false,
+    "decision": "PROVEN_SAFE",
+    "proof_method": "pharmacophore_exclusion",
+    "has_valid_embedding": false,
+    "reason": "No aromatic rings",
+    "aromatic_count": 0,
+    "nitrogen_count": 4,
+    "min_distortion": Infinity
+  }
+]

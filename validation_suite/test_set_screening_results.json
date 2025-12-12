@@ -1,0 +1,969 @@
+{
+  "proven_safe": [
+    {
+      "name": "Metformin",
+      "smiles": "CN(C)C(=N)NC(=N)N",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.0953259308062595,
+        "proven_safe": true,
+        "reason": "Radius 4.10 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 20,
+        "num_heavy_atoms": 9,
+        "mol_weight": 129.16699999999997,
+        "logp": -1.034159999999999
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "tiny_rigid"
+    },
+    {
+      "name": "Caffeine",
+      "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.198655684797496,
+        "proven_safe": true,
+        "reason": "Radius 4.20 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 24,
+        "num_heavy_atoms": 14,
+        "mol_weight": 194.19400000000007,
+        "logp": -1.0293
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_rigid"
+    },
+    {
+      "name": "Aspirin",
+      "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.170257050839242,
+        "proven_safe": true,
+        "reason": "Radius 4.17 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 21,
+        "num_heavy_atoms": 13,
+        "mol_weight": 180.15900000000005,
+        "logp": 1.3101
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_rigid"
+    },
+    {
+      "name": "Glucose",
+      "smiles": "C(C1C(C(C(C(O1)O)O)O)O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.312301239443674,
+        "proven_safe": true,
+        "reason": "Radius 4.31 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 24,
+        "num_heavy_atoms": 12,
+        "mol_weight": 180.1560000000001,
+        "logp": -3.2213999999999987
+      },
+      "error": null,
+      "expected_result": "uncertain",
+      "category": "small_flexible"
+    },
+    {
+      "name": "Terfenadine",
+      "smiles": "CC(C)(C)C1=CC=C(C=C1)C(CCCN2CCC(CC2)(C(=O)O)O)C3=CC=C(C=C3)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 1909.9455239045933,
+        "proven_safe": true,
+        "reason": "Volume 1910 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 66,
+        "num_heavy_atoms": 31,
+        "mol_weight": 425.5689999999995,
+        "logp": 4.513300000000005
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "medium_flexible_BINDER"
+    },
+    {
+      "name": "Astemizole",
+      "smiles": "COC1=CC=C(C=C1)CC2=CN=C(N2C)NC3=CC=C(C=C3)F",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2189.3966902422126,
+        "proven_safe": true,
+        "reason": "Volume 2189 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 41,
+        "num_heavy_atoms": 23,
+        "mol_weight": 311.3599999999997,
+        "logp": 3.9022000000000023
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "medium_flexible_BINDER"
+    },
+    {
+      "name": "Cisapride",
+      "smiles": "CCC1=CC(=C(C=C1)OC)NC(=O)N2CCC(CC2)N3C=C(C=C3)C(=O)C4=CC=C(C=C4)F",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 4663.0910223398,
+        "proven_safe": true,
+        "reason": "Volume 4663 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 61,
+        "num_heavy_atoms": 33,
+        "mol_weight": 449.52599999999967,
+        "logp": 5.298200000000005
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "medium_flexible_BINDER"
+    },
+    {
+      "name": "Dofetilide",
+      "smiles": "CN(C)S(=O)(=O)C1=CC=C(C=C1)OCCOCCNC2=CC=C(C=C2)NS(=O)(=O)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 3862.600300884816,
+        "proven_safe": true,
+        "reason": "Volume 3863 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 57,
+        "num_heavy_atoms": 30,
+        "mol_weight": 457.57399999999967,
+        "logp": 1.8158999999999998
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "medium_flexible_BINDER"
+    },
+    {
+      "name": "Ibuprofen",
+      "smiles": "CC(C)CC1=CC=C(C=C1)C(C)C(=O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 6.145738597149897,
+        "proven_safe": true,
+        "reason": "Radius 6.15 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 33,
+        "num_heavy_atoms": 15,
+        "mol_weight": 206.28500000000014,
+        "logp": 3.073200000000001
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_flexible"
+    },
+    {
+      "name": "Atorvastatin",
+      "smiles": "CC(C)C1=C(C(=C(N1CCC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 5063.999922140992,
+        "proven_safe": true,
+        "reason": "Volume 5064 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 76,
+        "num_heavy_atoms": 41,
+        "mol_weight": 558.6500000000017,
+        "logp": 6.313600000000007
+      },
+      "error": null,
+      "expected_result": "uncertain",
+      "category": "large_flexible"
+    },
+    {
+      "name": "Vancomycin",
+      "smiles": "CC1C(C(CC(O1)OC2C(C(C(OC2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)C(C(C(=O)NC(C(=O)NC5C(=O)NC7C8=CC(=C(C=C8)O)C9=C(C=C(C=C9O)O)C(NC(=O)C(C(C1=CC(=C(O4)C=C1)Cl)O)NC7=O)C(=O)O)CC(=O)N)NC(=O)C(CC(C)C)NC)O)Cl)CO)O)O)NC)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 8820.519462873748,
+        "proven_safe": true,
+        "reason": "Volume 8821 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 176,
+        "num_heavy_atoms": 101,
+        "mol_weight": 1449.2710000000025,
+        "logp": -0.023199999999993726
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "very_large_rigid"
+    },
+    {
+      "name": "Cyclosporine",
+      "smiles": "CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 7294.698321968472,
+        "proven_safe": true,
+        "reason": "Volume 7295 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 196,
+        "num_heavy_atoms": 85,
+        "mol_weight": 1202.6350000000032,
+        "logp": 3.2690000000000063
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "very_large_flexible"
+    },
+    {
+      "name": "Erythromycin",
+      "smiles": "CCC1C(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2CC(C(C(O2)C)O)(C)OC)C)OC3C(C(CC(O3)C)N(C)C)O)(C)O)C)C)O)(C)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2499.986282055346,
+        "proven_safe": true,
+        "reason": "Volume 2500 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 118,
+        "num_heavy_atoms": 51,
+        "mol_weight": 733.9370000000029,
+        "logp": 1.785600000000004
+      },
+      "error": null,
+      "expected_result": "uncertain",
+      "category": "large_flexible_UNCERTAIN"
+    },
+    {
+      "name": "Gentamicin",
+      "smiles": "CNC1C(C(C(C(O1)OC2C(CC(C(C2O)OC3C(C(C(CO3)(C)O)NC)O)N)N)N)O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "pharmacophore_no_aromatic",
+        "aromatic_count": 0,
+        "nitrogen_count": 5,
+        "proven_safe": true,
+        "reason": "No aromatic rings"
+      },
+      "properties": {
+        "num_atoms": 72,
+        "num_heavy_atoms": 33,
+        "mol_weight": 481.54699999999946,
+        "logp": -5.816900000000001
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_rigid"
+    },
+    {
+      "name": "Warfarin",
+      "smiles": "CC(=O)CC(C1=CC=CC=C1)C2=C(C3=CC=CC=C3OC2=O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "pharmacophore_no_nitrogen",
+        "aromatic_count": 2,
+        "nitrogen_count": 0,
+        "proven_safe": true,
+        "reason": "No basic nitrogen"
+      },
+      "properties": {
+        "num_atoms": 39,
+        "num_heavy_atoms": 23,
+        "mol_weight": 308.3329999999997,
+        "logp": 3.6096000000000035
+      },
+      "error": null,
+      "expected_result": "uncertain",
+      "category": "medium_flexible"
+    },
+    {
+      "name": "Quinidine",
+      "smiles": "C=CC1CN2CCC1C(C2)C(C3=CC=NC4=CC=C(C=C34)OC)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 6.300748249899316,
+        "proven_safe": true,
+        "reason": "Radius 6.30 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 48,
+        "num_heavy_atoms": 24,
+        "mol_weight": 324.4239999999996,
+        "logp": 3.0307000000000017
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "medium_rigid_BINDER"
+    },
+    {
+      "name": "Rapamycin",
+      "smiles": "CC1CCC2CC(C(=CC=CC=CC(CC(C(=O)C(C(C(=CC(C(=O)CC(OC(=O)C3CCCCN3C(=O)C(=O)C1(O2)C)C(C)CC4CCC(C(C4)OC)O)C)C)O)C)C)C)OC)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 6177.33935544376,
+        "proven_safe": true,
+        "reason": "Volume 6177 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 143,
+        "num_heavy_atoms": 64,
+        "mol_weight": 898.188000000003,
+        "logp": 6.80170000000001
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "very_large_flexible"
+    },
+    {
+      "name": "Paracetamol",
+      "smiles": "CC(=O)NC1=CC=C(C=C1)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.584120314628496,
+        "proven_safe": true,
+        "reason": "Radius 4.58 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 20,
+        "num_heavy_atoms": 11,
+        "mol_weight": 151.16500000000008,
+        "logp": 1.3505999999999998
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "tiny_nonbinder"
+    },
+    {
+      "name": "Nicotine",
+      "smiles": "CN1CCCC1C2=CN=CC=C2",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.902906952185333,
+        "proven_safe": true,
+        "reason": "Radius 4.90 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 26,
+        "num_heavy_atoms": 12,
+        "mol_weight": 162.2360000000001,
+        "logp": 1.8483
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "tiny_nonbinder"
+    },
+    {
+      "name": "Ascorbic Acid",
+      "smiles": "C(C(C1C(=C(C(=O)O1)O)O)O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.12349988609511,
+        "proven_safe": true,
+        "reason": "Radius 4.12 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 20,
+        "num_heavy_atoms": 12,
+        "mol_weight": 176.12400000000005,
+        "logp": -1.4073999999999995
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "tiny_nonbinder"
+    },
+    {
+      "name": "Dopamine",
+      "smiles": "C1=CC(=C(C=C1CCN)O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.510360894371604,
+        "proven_safe": true,
+        "reason": "Radius 4.51 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 22,
+        "num_heavy_atoms": 11,
+        "mol_weight": 153.1810000000001,
+        "logp": 0.5989999999999995
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "tiny_nonbinder"
+    },
+    {
+      "name": "Serotonin",
+      "smiles": "C1=CC2=C(C=C1O)C(=CN2)CCN",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 4.760012245071336,
+        "proven_safe": true,
+        "reason": "Radius 4.76 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 25,
+        "num_heavy_atoms": 13,
+        "mol_weight": 176.2190000000001,
+        "logp": 1.3747
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "tiny_nonbinder"
+    },
+    {
+      "name": "Naproxen",
+      "smiles": "CC(C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "pharmacophore_no_nitrogen",
+        "aromatic_count": 2,
+        "nitrogen_count": 0,
+        "proven_safe": true,
+        "reason": "No basic nitrogen"
+      },
+      "properties": {
+        "num_atoms": 31,
+        "num_heavy_atoms": 17,
+        "mol_weight": 230.2630000000001,
+        "logp": 3.036500000000001
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Atenolol",
+      "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 1892.4752889564097,
+        "proven_safe": true,
+        "reason": "Volume 1892 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 41,
+        "num_heavy_atoms": 19,
+        "mol_weight": 266.3409999999999,
+        "logp": 0.4521
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Captopril",
+      "smiles": "CC(CS)C(=O)N1CCCC1C(=O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 5.105671612937471,
+        "proven_safe": true,
+        "reason": "Radius 5.11 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 29,
+        "num_heavy_atoms": 14,
+        "mol_weight": 217.2900000000001,
+        "logp": 0.6279000000000001
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Lisinopril",
+      "smiles": "C1CCC(C(C1)CCC(=O)N2CCCC2C(=O)O)N",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 5.513333377814255,
+        "proven_safe": true,
+        "reason": "Radius 5.51 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 43,
+        "num_heavy_atoms": 19,
+        "mol_weight": 268.3569999999998,
+        "logp": 1.3597000000000001
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_nonbinder"
+    },
+    {
+      "name": "Bepridil",
+      "smiles": "CC(C)COCC(CN(CC1=CC=CC=C1)C2=CC=CC=C2)OCC3=CC=CC=C3",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2119.224312498456,
+        "proven_safe": true,
+        "reason": "Volume 2119 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 63,
+        "num_heavy_atoms": 30,
+        "mol_weight": 403.5659999999996,
+        "logp": 5.951200000000006
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "small_BINDER"
+    },
+    {
+      "name": "E-4031",
+      "smiles": "CN1CCN(CC1)S(=O)(=O)C2=CC=C(C=C2)C(=O)NC3=CC=CC=C3C",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 3068.2536061663673,
+        "proven_safe": true,
+        "reason": "Volume 3068 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 49,
+        "num_heavy_atoms": 26,
+        "mol_weight": 373.47799999999967,
+        "logp": 2.183419999999999
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "medium_BINDER"
+    },
+    {
+      "name": "Simvastatin",
+      "smiles": "CCC(C)(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC3CC(CC(=O)O3)O)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "pharmacophore_no_aromatic",
+        "aromatic_count": 0,
+        "nitrogen_count": 0,
+        "proven_safe": true,
+        "reason": "No aromatic rings"
+      },
+      "properties": {
+        "num_atoms": 68,
+        "num_heavy_atoms": 30,
+        "mol_weight": 418.57399999999944,
+        "logp": 4.585600000000006
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_nonbinder"
+    },
+    {
+      "name": "Rosuvastatin",
+      "smiles": "CC(C)C1=NC(=NC(=C1C=CC(CC(CC(=O)O)O)O)C2=CC=C(C=C2)F)NS(=O)(=O)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 6.19790237168013,
+        "proven_safe": true,
+        "reason": "Radius 6.20 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 58,
+        "num_heavy_atoms": 32,
+        "mol_weight": 467.5189999999997,
+        "logp": 2.3774000000000006
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_nonbinder"
+    },
+    {
+      "name": "Metoprolol",
+      "smiles": "CC(C)NCC(COC1=CC=C(C=C1)CCOC)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2912.148170712498,
+        "proven_safe": true,
+        "reason": "Volume 2912 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 44,
+        "num_heavy_atoms": 19,
+        "mol_weight": 267.36899999999986,
+        "logp": 1.6131999999999997
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Omeprazole",
+      "smiles": "CC1=CN=C(C(=C1OC)C)CS(=O)C2=NC3=C(N2)C=CC(=C3)OC",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2777.6574178725155,
+        "proven_safe": true,
+        "reason": "Volume 2778 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 43,
+        "num_heavy_atoms": 24,
+        "mol_weight": 345.42399999999975,
+        "logp": 2.8997400000000013
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Diazepam",
+      "smiles": "CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3",
+      "proven_safe": true,
+      "proof": {
+        "method": "reachability",
+        "radius": 5.658384228828532,
+        "proven_safe": true,
+        "reason": "Radius 5.66 \u00c5 < 6.35 \u00c5"
+      },
+      "properties": {
+        "num_atoms": 33,
+        "num_heavy_atoms": 20,
+        "mol_weight": 284.74599999999975,
+        "logp": 3.1538000000000013
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Amoxicillin",
+      "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=C(C=C3)O)N)C(=O)O)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2011.275056578181,
+        "proven_safe": true,
+        "reason": "Volume 2011 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 44,
+        "num_heavy_atoms": 25,
+        "mol_weight": 365.4109999999997,
+        "logp": 0.023699999999999555
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Doxycycline",
+      "smiles": "CC1C2C(C3C(C(=O)C(=C(C3(C(=O)C2=C(C4=C1CCCC4)O)O)O)C(=O)N)N(C)C)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "pharmacophore_no_aromatic",
+        "aromatic_count": 0,
+        "nitrogen_count": 2,
+        "proven_safe": true,
+        "reason": "No aromatic rings"
+      },
+      "properties": {
+        "num_atoms": 59,
+        "num_heavy_atoms": 31,
+        "mol_weight": 432.4729999999996,
+        "logp": 0.03620000000000256
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_nonbinder"
+    },
+    {
+      "name": "Paclitaxel",
+      "smiles": "CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 8902.046749364707,
+        "proven_safe": true,
+        "reason": "Volume 8902 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 113,
+        "num_heavy_atoms": 62,
+        "mol_weight": 853.918000000002,
+        "logp": 3.735700000000004
+      },
+      "error": null,
+      "expected_result": "uncertain",
+      "category": "large_nonbinder"
+    },
+    {
+      "name": "Colchicine",
+      "smiles": "CC(=O)NC1CCC2=CC(=C(C(=C2C3=CC=C(C(=O)C=C13)OC)OC)OC)OC",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 1830.674025128749,
+        "proven_safe": true,
+        "reason": "Volume 1831 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 54,
+        "num_heavy_atoms": 29,
+        "mol_weight": 399.4429999999997,
+        "logp": 2.8716000000000017
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_nonbinder"
+    },
+    {
+      "name": "Tamoxifen",
+      "smiles": "CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 2370.8586748256516,
+        "proven_safe": true,
+        "reason": "Volume 2371 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 57,
+        "num_heavy_atoms": 28,
+        "mol_weight": 371.5239999999996,
+        "logp": 5.996100000000006
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Methotrexate",
+      "smiles": "CN(CC1=CN=C2C(=N1)C(=NC(=N2)N)N)C3=CC=C(C=C3)C(=O)NC(CCC(=O)O)C(=O)O",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 3812.2969157055895,
+        "proven_safe": true,
+        "reason": "Volume 3812 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 55,
+        "num_heavy_atoms": 33,
+        "mol_weight": 454.44699999999983,
+        "logp": 0.2684000000000003
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_nonbinder"
+    },
+    {
+      "name": "Ritonavir",
+      "smiles": "CC(C)CN(CC(C(CC1=CC=CC=C1)NC(=O)OCC2=CN=CS2)O)CC(=O)NC(CC3=CC=CC=C3)C(C(C)C)NC(=O)C(C(C)C)NC(=O)NC(C)(C)C",
+      "proven_safe": true,
+      "proof": {
+        "method": "volume_exclusion",
+        "volume": 5847.733809878717,
+        "proven_safe": true,
+        "reason": "Volume 5848 \u00c5\u00b3 > 1810 \u00c5\u00b3"
+      },
+      "properties": {
+        "num_atoms": 122,
+        "num_heavy_atoms": 57,
+        "mol_weight": 808.1030000000022,
+        "logp": 5.290100000000005
+      },
+      "error": null,
+      "expected_result": "uncertain",
+      "category": "large_nonbinder"
+    }
+  ],
+  "unprovable": [
+    {
+      "name": "Penicillin G",
+      "smiles": "CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 41,
+        "num_heavy_atoms": 23,
+        "mol_weight": 334.3969999999997,
+        "logp": 0.8607999999999993,
+        "radius": 6.893458569437322,
+        "volume": 1372.1453513099618
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "medium_rigid"
+    },
+    {
+      "name": "Sotalol",
+      "smiles": "CC(C)NCC(C1=CC=C(C=C1)NS(=O)(=O)C)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 38,
+        "num_heavy_atoms": 18,
+        "mol_weight": 272.3699999999997,
+        "logp": 1.0895,
+        "radius": 6.366002304527157,
+        "volume": 1080.6597690848491
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "small_flexible_BINDER"
+    },
+    {
+      "name": "Propranolol",
+      "smiles": "CC(C)NCC(COC1=CC=CC2=CC=CC=C21)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 40,
+        "num_heavy_atoms": 19,
+        "mol_weight": 259.34900000000005,
+        "logp": 2.577500000000001,
+        "radius": 6.9508335399599925,
+        "volume": 1406.6928288231124
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Haloperidol",
+      "smiles": "C1CCN(CC1)CCC(C2=CC=C(C=C2)Cl)(C3=CC=C(C=C3)F)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 47,
+        "num_heavy_atoms": 24,
+        "mol_weight": 347.8609999999996,
+        "logp": 4.591000000000005,
+        "radius": 7.126539476576746,
+        "volume": 1516.0889936457986
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "small_BINDER"
+    },
+    {
+      "name": "Thioridazine",
+      "smiles": "CN1CCCCC1CCN2C3=CC=CC=C3SC4=C2C=C(C=C4)SC",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 51,
+        "num_heavy_atoms": 25,
+        "mol_weight": 370.5869999999996,
+        "logp": 5.8856000000000055,
+        "radius": 6.971414381196356,
+        "volume": 1419.2251650498015
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "small_BINDER"
+    },
+    {
+      "name": "Fluoxetine",
+      "smiles": "CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 40,
+        "num_heavy_atoms": 22,
+        "mol_weight": 309.33099999999956,
+        "logp": 4.435000000000003,
+        "radius": 6.58660659965606,
+        "volume": 1196.9438681412648
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Ciprofloxacin",
+      "smiles": "C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 42,
+        "num_heavy_atoms": 24,
+        "mol_weight": 331.3469999999997,
+        "logp": 1.5833,
+        "radius": 7.175111795680251,
+        "volume": 1547.3003577619202
+      },
+      "error": null,
+      "expected_result": "provable_safe",
+      "category": "small_nonbinder"
+    },
+    {
+      "name": "Hydroxychloroquine",
+      "smiles": "CCN(CCO)CCCN(CCCl)C1=C(C=CC(=C1)Cl)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {
+        "num_atoms": 45,
+        "num_heavy_atoms": 21,
+        "mol_weight": 335.2749999999995,
+        "logp": 2.795100000000002,
+        "radius": 6.60801935981521,
+        "volume": 1208.6554908545256
+      },
+      "error": null,
+      "expected_result": "NOT_provable",
+      "category": "small_BINDER"
+    }
+  ],
+  "errors": [
+    {
+      "name": "Azithromycin",
+      "smiles": "CCC1C(C(C(N(C(C(C(=O)C(CC(C(C(C(C(C(=O)O1)C)OC2C(C(CC(O2)C)N(C)C)O)(C)OC3C(C(CC(O3)C)N(C)C)O)C)C)C)C)C)O)(C)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {},
+      "error": "Invalid SMILES",
+      "expected_result": "uncertain",
+      "category": "large_flexible_UNCERTAIN"
+    },
+    {
+      "name": "Digoxin",
+      "smiles": "CC1C(C(CC(O1)OC2C(OC(CC2O)OC3C(OC(CC3O)OC4CCC5(C(C4)CCC6C5CCC7(C(C6)CCC(O7)C8=CC(=O)OC8)C)C)C)O)O",
+      "proven_safe": false,
+      "proof": null,
+      "properties": {},
+      "error": "Invalid SMILES",
+      "expected_result": "uncertain",
+      "category": "large_nonbinder"
+    }
+  ]
+}

@@ -143,10 +143,13 @@ Labels: case-study
 
 ### Phase 1: Parallel AI Research (30min)
 
+**IMPORTANT**: Always use `"model": "grok-4"` for Grok API calls.
+
 Launch 3 AI agents simultaneously to gather difficult biochemistry problems:
 
 ```bash
 # 1. Grok (xAI) - Focused on critical issues
+# ALWAYS use model: "grok-4"
 python3 << 'EOF'
 import json
 prompt = """Identify 10 extremely difficult biochemistry problems that cause drug failures and could potentially be solved with formal verification (theorem proving).
